@@ -648,6 +648,46 @@ ul.sidebar {
 	color: #FFF;
 	text-decoration: none;
 } 
+.resume .renglon { margin: 0px 0px 35px 0px; overflow: hidden; }
+.resume .renglon .heading { overflow: hidden; margin: 0px 0px 15px 0px; }
+.resume .renglon .heading h1 {
+	width: 888px;
+	float: left;
+	font-family: 'Quicksand Light';
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: 0px;
+	padding: 0px;
+}
+.resume .renglon.experience .heading h1 { background: url(img/resume_headings_bg.png) no-repeat 311px 7px; }
+.resume .renglon.projects .heading h1 { background: url(img/resume_headings_bg.png) no-repeat 173px 7px; }
+.resume .renglon.education .heading h1 { background: url(img/resume_headings_bg.png) no-repeat 173px 7px; }
+.resume .renglon.recomendation .heading h1 { background: url(img/resume_headings_bg.png) no-repeat 287px 7px; }
+.resume .renglon .heading div.nav { float: right; margin: 7px 0px 0px 0px; }
+.resume .renglon .heading div.nav span { 
+	display: block; 
+	float: left;
+	width: 28px; 
+	height: 23px;   
+	cursor: pointer;
+}
+.resume .renglon .heading div.nav span.left { 
+	margin: 0px 5px 0px 0px; 
+	background: #535353 url(img/resume_arrow_left.png) no-repeat 8px 5px; 
+}
+.resume .renglon .heading div.nav span.right { background: #535353 url(img/resume_arrow_right.png) no-repeat 8px 3px; }
+.resume .renglon .jobs {}
+.resume .renglon .jobs .job { width: 301px; float: left; margin: 0px 23px 0px 0px; }
+.resume .renglon .jobs .job.medium { width: 400px; }
+.resume .renglon .jobs .job.large { width: 500px; }
+.resume .renglon .jobs .job.full { width: auto; }
+.resume .renglon.recomendation .jobs .job.full img { float: left; margin: 0px 15px 25px 0px; }
+.resume .renglon .jobs .job.third { margin: 0px; }
+.resume .renglon .jobs .job h2, .resume .renglon .jobs .job h3 { font-size: 1.1em; font-weight: normal; margin: 0px; }
+.resume .renglon .jobs .job h3, .resume .renglon.recomendation .jobs .job h2 span { font-family: 'Quicksand Light'; }
+.resume .renglon .jobs .job p.role { margin: 0px; }
+.resume .renglon .jobs .job p.quote { font-size: 1em; font-weight: lighter; margin: 0px 0px 5px 0px; }
+.resume .renglon .jobs .job p.dates { color: #818181; font-size: 0.8em; margin: 0px; }
 
 
 
