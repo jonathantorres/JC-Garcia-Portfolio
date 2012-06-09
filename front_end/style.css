@@ -649,6 +649,10 @@ ul.sidebar {
 	text-decoration: none;
 } 
 .resume .renglon { margin: 0px 0px 35px 0px; overflow: hidden; }
+.resume .renglon.experience { margin: 0px 0px 35px 0px; }
+.resume .renglon.projects { margin: 0px 0px 10px 0px; }
+.resume .renglon.education { margin: 0px 0px 10px 0px; }
+.resume .renglon.recomendation { margin: 0px 0px 35px 0px; }
 .resume .renglon .heading { overflow: hidden; margin: 0px 0px 15px 0px; }
 .resume .renglon .heading h1 {
 	width: 888px;
@@ -676,11 +680,12 @@ ul.sidebar {
 	background: #535353 url(img/resume_arrow_left.png) no-repeat 8px 5px; 
 }
 .resume .renglon .heading div.nav span.right { background: #535353 url(img/resume_arrow_right.png) no-repeat 8px 3px; }
-.resume .renglon .jobs {}
+.resume .renglon .jobs_container { overflow: hidden; position: relative; height: 106px; }
+.resume .renglon .jobs { overflow: hidden; position: absolute; }
 .resume .renglon .jobs .job { width: 301px; float: left; margin: 0px 23px 0px 0px; }
 .resume .renglon .jobs .job.medium { width: 400px; }
 .resume .renglon .jobs .job.large { width: 500px; }
-.resume .renglon .jobs .job.full { width: auto; }
+.resume .renglon .jobs .job.full { width: 936px; }
 .resume .renglon.recomendation .jobs .job.full img { float: left; margin: 0px 15px 25px 0px; }
 .resume .renglon .jobs .job.third { margin: 0px; }
 .resume .renglon .jobs .job h2, .resume .renglon .jobs .job h3 { font-size: 1.1em; font-weight: normal; margin: 0px; }
@@ -695,7 +700,7 @@ ul.sidebar {
 
 
 
-/* IE9 --------------------------------------- */
+/* IE fixes --------------------------------------- */
 .ie9 .gradient { filter: none; }
 
 

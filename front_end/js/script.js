@@ -91,7 +91,47 @@ JCGarcia.Site = new function() {
 	}
 	
 	this.resume = function() {
-		//
+		resumeRenglons('div.renglon.experience', 324, 301, 23, 3);
+		resumeRenglons('div.renglon.projects', 324, 301, 23, 3);
+		resumeRenglons('div.renglon.education', 324, 301, 23, 3);
+		resumeRenglons('div.renglon.recomendation', 959, 936, 23, 1);
+	}
+	
+	function resumeRenglons(renglon, itemWidth, thumbWidth, thumbMargin, itemsInView) {
+		var numOflistItems = 0;
+		var $arrowLeft = $j(renglon).find('span.left');
+		var $arrowRight = $j(renglon).find('span.right');
+		var $jobsContainer = $j(renglon + ' .jobs_container .jobs');
+		
+		numOflistItems = $j(renglon + ' .jobs .job').length;
+		$jobsContainer.css( { 'left' : '0px' } );
+		$jobsContainer.css( { 'width' : (numOflistItems * thumbWidth) + (numOflistItems * thumbMargin) + 'px' } );
+		//console.log(numOflistItems);
+		
+		$arrowLeft.click(function(e) { 
+			e.preventDefault();
+			if ($j('$jobsContainer:animated').length) return;
+			
+			if (parseInt($jobsContainer.css('left')) >= 0) {
+				$jobsContainer.css( { 'left': '0px' } )
+			} else {
+				$jobsContainer.animate( { left: (parseInt($jobsContainer.css('left')) + itemWidth) + 'px' } );
+			}
+		});
+		
+		$arrowRight.click(function(e) { 
+			e.preventDefault();
+			if ($j('$jobsContainer:animated').length) return;
+			
+			var itemsOutside = numOflistItems - itemsInView;
+			var limitLeft = itemWidth * itemsOutside;
+			
+			if (parseInt($jobsContainer.css('left')) == -limitLeft) {
+				$jobsContainer.css( { 'left': -limitLeft + 'px' } );
+			} else {
+				$jobsContainer.animate( { left: (parseInt($jobsContainer.css('left')) - itemWidth) + 'px' } );
+			}
+		});
 	}
 	
 	function masonSquares() {
@@ -131,7 +171,7 @@ JCGarcia.Site = new function() {
 
 $j(document).ready(function(e) {
 	var page = $j('#main_content').children().first().attr('class');
-	console.log(page);
+	//console.log(page);
 	
 	JCGarcia.Site.init();
 	
