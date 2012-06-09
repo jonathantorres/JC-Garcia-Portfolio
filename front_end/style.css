@@ -308,7 +308,7 @@ p { font-size: 0.9em; margin: 0px 0px 15px 0px; }
 	display: block;
 }
 div.social, div.social div { float: left; }
-div.facebook_likes { margin: -2px 0px 0px -20px; }
+div.facebook_likes { margin: 0px 0px 0px -23px; }
 
 /* Search Area --------------------------------------- */
 .search {

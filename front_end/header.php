@@ -41,14 +41,14 @@
   
   	<!-- fb like -->
   	<div id="fb-root"></div>
-	<script>
-		(function(d, s, id) {
-  			var js, fjs = d.getElementsByTagName(s)[0];
-  			if (d.getElementById(id)) return;
-  			js = d.createElement(s); js.id = id;
-  			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=254927021228474";
-  			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
+  	<script>
+  	(function(d, s, id) {
+	  	var js, fjs = d.getElementsByTagName(s)[0];
+	  	if (d.getElementById(id)) return;
+	  	js = d.createElement(s); js.id = id;
+	  	js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=254927021228474";
+	  	fjs.parentNode.insertBefore(js, fjs);
+	  } (document, 'script', 'facebook-jssdk'));
 	</script>
   
 	<div id="mainContainer">
@@ -62,7 +62,7 @@
 							</script>
 		  				</div><!-- .twitter_btns -->
 						<div class="facebook_likes">
-							<div class="fb-like" data-href="https://www.facebook.com/juancarlosangustia" data-send="false" data-width="300" data-show-faces="false"></div>
+							<div class="fb-like" data-href="https://www.facebook.com/juancarlosangustia" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
 						</div>
 		  			</div><!-- .social -->
 		  			
