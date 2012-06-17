@@ -661,7 +661,7 @@ ul.sidebar {
 } 
 .resume .renglon { width: 950px; margin: 0px 0px 35px 2px; overflow: hidden; }
 .resume .renglon.experience { margin: 0px 0px 35px 0px; }
-.resume .renglon.projects { margin: 0px 0px 10px 0px; }
+.resume .renglon.projects { margin: 0px 0px 0px 0px; }
 .resume .renglon.education { margin: 0px 0px 10px 0px; }
 .resume .renglon.recomendation { margin: 0px 0px 35px 0px; }
 .resume .renglon .heading { overflow: hidden; margin: 0px 0px 15px 0px; }
