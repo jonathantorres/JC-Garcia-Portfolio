@@ -48,6 +48,21 @@ JCGarcia.Site = new function() {
 			}
 		});
 		
+		/* Hover on logo */
+		$j('h1.main_title a').hover(function(e) {
+			$j('h1.main_title span.slogan').css( { 'display': 'block' } );
+		}, function(e) {
+			$j('h1.main_title span.slogan').css( { 'display': 'none' } );
+		});
+		
+		$j('h1.main_title span.slogan').mouseenter(function(e) {
+			$j('h1.main_title span.slogan').css( { 'display': 'block' } );
+		});
+		
+		$j('h1.main_title span.slogan').mouseleave(function(e) {
+			$j('h1.main_title span.slogan').css( { 'display': 'none' } );
+		});
+		
 		/* Search Form Validation */
 		if (!Modernizr.input.placeholder) {
 			var label = 'Buscar...';

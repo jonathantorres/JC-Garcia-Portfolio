@@ -377,7 +377,7 @@ span.slogan {
 	position: absolute;
 	top: -46px;
 	left: 192px;
-	display: block;
+	display: none;
 	width: 175px;
 	height: 50px;
 	background-image: url(img/slogan.png);
