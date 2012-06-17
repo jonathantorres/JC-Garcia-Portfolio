@@ -628,7 +628,7 @@ ul.sidebar {
 	display: block;
 	width: 1000px;
 	height: 300px;
-	margin: 0px 0px 0px -21px;
+	margin: 0px 0px 0px -25px;
 	background: url(img/paper_bg.png) no-repeat 0px 0px;
 }
 .resume .profile img { margin: 62px 20px 0px 48px; float: left; }
@@ -648,14 +648,14 @@ ul.sidebar {
 	color: #FFF;
 	text-decoration: none;
 } 
-.resume .renglon { margin: 0px 0px 35px 0px; overflow: hidden; }
+.resume .renglon { width: 950px; margin: 0px 0px 35px 2px; overflow: hidden; }
 .resume .renglon.experience { margin: 0px 0px 35px 0px; }
 .resume .renglon.projects { margin: 0px 0px 10px 0px; }
 .resume .renglon.education { margin: 0px 0px 10px 0px; }
 .resume .renglon.recomendation { margin: 0px 0px 35px 0px; }
 .resume .renglon .heading { overflow: hidden; margin: 0px 0px 15px 0px; }
 .resume .renglon .heading h1 {
-	width: 888px;
+	width: 875px;
 	float: left;
 	font-family: 'Quicksand Light';
 	font-weight: normal;
@@ -667,7 +667,7 @@ ul.sidebar {
 .resume .renglon.projects .heading h1 { background: url(img/resume_headings_bg.png) no-repeat 173px 7px; }
 .resume .renglon.education .heading h1 { background: url(img/resume_headings_bg.png) no-repeat 173px 7px; }
 .resume .renglon.recomendation .heading h1 { background: url(img/resume_headings_bg.png) no-repeat 287px 7px; }
-.resume .renglon .heading div.nav { float: right; margin: 7px 0px 0px 0px; }
+.resume .renglon .heading div.nav { float: right; margin: 7px 8px 0px 0px; }
 .resume .renglon .heading div.nav span { 
 	display: block; 
 	float: left;
