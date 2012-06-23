@@ -298,7 +298,7 @@ p { font-size: 0.9em; margin: 0px 0px 15px 0px; }
 
 /* Containers --------------------------------------- */
 #mainContainer { width: 990px; margin: 0px auto 50px auto; overflow: hidden; }
-.top_of_page { position: relative; z-index: 9999; }
+.top_of_page { position: relative; z-index: 9995; }
 
 /* Page Header --------------------------------------- */
 #page_header { 
@@ -444,7 +444,7 @@ span.slogan {
 	list-style: none;
 	margin: 0px;
 	padding: 0px;
-	z-index: 9998;
+	z-index: 9994;
 }
 #all_posts li { }
 #all_posts li img { display: block; }
@@ -707,9 +707,93 @@ ul.sidebar {
 .resume .renglon .jobs .job p.quote { font-size: 1em; font-weight: lighter; margin: 0px 0px 5px 0px; }
 .resume .renglon .jobs .job p.dates { color: #818181; font-size: 0.8em; margin: 0px; }
 
+/* Lightbox ------------------------------------------- */
+.lightbox {
+	position: fixed;
+	display: none;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: url(img/lightbox_bg.png) repeat;
+	z-index: 9996;
+	opacity: 0.8;
+	filter: Alpha(opacity=80);
+	margin: 0px;
+	padding: 0px;
+}
 
-
-
+/* Contact Lightbox ------------------------------------------- */
+.contact_container {
+	display: none;
+	position: absolute;
+	width: 620px;
+	height: 420px;
+	border-radius: 10px;
+	top: 50%;
+	left: 50%;
+	padding: 10px;
+	margin-left: -320px;
+	margin-top: -225px;
+	background: #000;
+	opacity: 0.5;
+	filter: Alpha(opacity=50);
+	z-index: 9997;
+}
+.contact_form {
+	display: none;
+	position: absolute;
+	width: 560px;
+	height: 360px;
+	top: 50%;
+	left: 50%;
+	padding: 30px;
+	margin-left: -310px;
+	margin-top: -215px;
+	border-radius: 6px;
+	background: #FFF;
+	z-index: 9998;
+}
+.contact_form #close_contact {
+	display: block;
+	position: absolute;
+	top: 9px;
+	left: 581px;
+	width: 30px;
+	height: 30px;
+	background: url(img/close_contact.png) no-repeat;
+}
+.contact_form h1 {
+	font-family: 'Quicksand Light';
+	font-size: 2em;
+	color: #484848;
+	margin: 0px 0px 17px 0px;
+	text-transform: uppercase;
+}
+.contact_form #contact_jc {
+	float: left;
+	display: block;
+	width: 300px;
+}
+.contact_form #contact_jc ul li input[type="text"], .contact_form #contact_jc ul li textarea { width: 270px; height: 40px; }
+.contact_form #contact_jc ul li input[type="text"]#email { background: #484848 url(img/comment_email_icon.png) no-repeat 7px 13px; }
+.contact_form #contact_jc ul li input[type="text"]#username { background: #484848 url(img/comment_name_icon.png) no-repeat 7px 10px; }
+.contact_form #contact_jc ul li textarea#message { 
+	height: 100px;
+	padding: 5px 0px 0px 35px;
+	background: #484848 url(img/comment_message_icon.png) no-repeat 7px 7px;
+}
+.contact_form #contact_jc ul li input[type="submit"] { float: right; margin: 0px -7px 0px 0px; padding: 8px 26px; }
+.contact_form #other_contacts {
+	float: left;
+	display: block;
+	margin: 0px 0px 0px 30px;
+	width: 225px;
+	height: 300px;
+}
+.contact_form #other_contacts h3 { font-size: 1.4em; font-weight: normal; margin: 0px; }
+.contact_form #other_contacts p { font-family: 'Quicksand Light'; font-size: 1.1em; }
+.contact_form #other_contacts .networks { margin: 5px 0px 0px -4px; }
 
 
 

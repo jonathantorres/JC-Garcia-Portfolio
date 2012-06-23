@@ -6,6 +6,7 @@ var JCGarcia = {};
 
 JCGarcia.Site = new function() {
 	var isSearchDisplayed = false;
+	var $lightBox = $j('div.lightbox');
 	
 	this.init = function() {
 		/* Filter Dropdown */
@@ -94,6 +95,29 @@ JCGarcia.Site = new function() {
 			} else {
 				$j('#page_header').addClass('shadow');
 			}
+		});
+		
+		/* Open contact lightbox */
+		$j('#contact_btn').click(function(e) {
+			var $contactContainer = $j('div.contact_container');
+			var $contactForm = $j('.contact_form');
+			e.preventDefault();
+			
+			$lightBox.fadeIn('fast', function() {
+				$contactContainer.fadeIn('fast');
+				$contactForm.fadeIn('fast');
+				console.log('fadein complete');
+			});
+			
+			/* Close contact lightbox */
+			$j('#close_contact').click(function(e) {
+				e.preventDefault();
+				
+				$contactContainer.fadeOut('fast');
+				$contactForm.fadeOut('fast', function() {
+					$lightBox.fadeOut('fast');
+				});
+			});
 		});
 	}
 	

@@ -1,6 +1,48 @@
 		</section><!-- #main_content -->
 	  	
   	</div><!-- #mainContainer -->
+  	
+  	<div class="lightbox"></div><!-- .lightbox -->
+  	<div class="contact_container"></div><!-- contact_container -->
+  	<div class="contact_form">
+		<a id="close_contact" href="#"></a>
+		<h1>Contacto</h1>
+		<form id="contact_jc" class="comments_form" action="#" method="post">
+			<ul>
+				<li>
+					<label for="username">nombre</label>
+					<input type="text" id="username" name="username" placeholder="nombre">
+				</li>
+				<li>
+					<label for="email">e-mail</label>
+					<input type="text" id="email" name="email" placeholder="e-mail">
+				</li>
+				<li>
+					<label for="message">mensaje</label>
+					<textarea id="message" name="message" placeholder="mensaje"></textarea>
+				</li>
+				<li>
+					<input type="submit" class="gradient dark_button" id="send" name="send" value="Enviar">
+				</li>
+			</ul>
+		</form><!-- #contact_jc -->
+		
+		<div id="other_contacts">
+			<h3>Movil</h3>
+			<p>787.667.5748</p>
+			
+			<h3>Skype</h3>
+			<p>jangustia</p>
+			
+			<h3>Follow me</h3>
+			<div class="networks">
+				<a href="#"><img src="img/contact_twitter_icon.png"></a>
+				<a href="#"><img src="img/contact_flickr_icon.png"></a>
+				<a href="#"><img src="img/contact_instagram_icon.png"></a>
+				<a href="#"><img src="img/contact_linkedin_icon.png"></a>
+			</div>
+		</div><!-- #other_contacts -->
+	</div><!-- contact_form -->
 
   <!-- JavaScript at the bottom for fast page loading -->
 

@@ -85,8 +85,8 @@
 		  			
 		  			<nav id="main_nav">
 		  				<ul class="nav_list">
-		  					<li><a href="resume.php">RESUME</a></li>
-		  					<li><a href="#">CONTACTO</a></li>
+		  					<li><a id="resume_btn" href="resume.php">RESUME</a></li>
+		  					<li><a id="contact_btn" href="#">CONTACTO</a></li>
 		  				</ul>
 		  			</nav><!-- #main_nav -->
 		  			
