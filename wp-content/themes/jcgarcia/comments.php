@@ -2,7 +2,7 @@
 	<h3 class="comments_title">COMENTARIOS</h3>
 	<ol class="comments_list">
 		<li>
-			<img class="comment_avatar" src="img/comment_avatar.jpg" alt="Thumb">
+			<img class="comment_avatar" src="<?php bloginfo('template_url'); ?>/img/comment_avatar.jpg" alt="Thumb">
 			<div class="comment_content">
 				<div class="comment_meta">
 					<h4 class="commenter_name">Juan Carlos Garcia</h4>
@@ -13,7 +13,7 @@
 		</li>
 		
 		<li>
-			<img class="comment_avatar" src="img/comment_avatar.jpg" alt="Thumb">
+			<img class="comment_avatar" src="<?php bloginfo('template_url'); ?>/img/comment_avatar.jpg" alt="Thumb">
 			<div class="comment_content">
 				<div class="comment_meta">
 					<h4 class="commenter_name">Juan Carlos Garcia</h4>
@@ -24,7 +24,7 @@
 		</li>
 		
 		<li>
-			<img class="comment_avatar" src="img/comment_avatar.jpg" alt="Thumb">
+			<img class="comment_avatar" src="<?php bloginfo('template_url'); ?>/img/comment_avatar.jpg" alt="Thumb">
 			<div class="comment_content">
 				<div class="comment_meta">
 					<h4 class="commenter_name">Juan Carlos Garcia</h4>

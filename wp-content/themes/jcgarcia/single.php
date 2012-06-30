@@ -1,4 +1,4 @@
-			<?php require_once('header.php'); ?>
+			<?php get_header(); ?>
 			
 	  		<div class="single">
 	  			<h1 class="post_title">Essentials: Lincoln Eather</h1>
@@ -7,7 +7,7 @@
 	  				<span class="post_category"><span>Categoria:</span> Estilo</span>
 	  				<span class="post_comments"><span>Comentarios:</span>  10</span>
 	  			</div>
-	  			<img alt="Post Image" src="img/post_image_dummy.jpg">
+	  			<img alt="Post Image" src="<?php bloginfo('template_url'); ?>/img/post_image_dummy.jpg">
 	  			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet gravida sem. Maecenas malesuada malesuada tempor. Maecenas quis ultrices purus. Nunc viverra egestas venenatis. Suspendisse potenti. Quisque sit amet massa quam. Aenean varius varius magna, a auctor libero vulputate malesuada. Nunc adipiscing, turpis in tempor congue, lorem eros ultrices lectus, eget porta sapien lacus quis augue. Duis sed sem velit, at <a href="#">sollicitudin</a> nibh. Etiam sodales dictum tempus.</p>
 
 				<p>Nullam a sem ac eros sagittis feugiat eget ut purus. Etiam vel erat mi, et porta nulla. Duis vulputate, urna lobortis consequat tempus, urna risus consectetur elit, id condimentum lectus diam et risus. Donec rutrum rhoncus tempus. Sed tristique imperdiet convallis. Nulla tempor est non nisi interdum porttitor. Pellentesque ut nisi et augue scelerisque sagittis. Sed fringilla, tellus eu pharetra malesuada, justo arcu vehicula mauris, a volutpat ante ipsum ut lectus.</p>
@@ -25,10 +25,10 @@
 					</div><!-- .facebook_likes -->
 				</div><!-- .social_sharing -->
 				
-				<?php require_once('comments.php'); ?>
+				<?php comments_template(); ?>
 				
 	  		</div><!-- .single -->
 	  		
-	  		<?php require_once('sidebar.php'); ?>
+	  		<?php get_sidebar(); ?>
 	  		
-	  		<?php require_once('footer.php'); ?>
+	  		<?php get_footer(); ?>

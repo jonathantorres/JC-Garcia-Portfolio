@@ -1,6 +1,6 @@
-	  		<?php require_once('header.php'); ?>
+	  		<?php get_header(); ?>
 	  		
-	  		<ul id="all_posts" class="home">
+	  		<ul id="all_posts">
 	  		
 	  			<!-- WP Post -->
 	  			<li class="square wp">
@@ -169,4 +169,4 @@
 	  			</li>
 	  		</ul><!-- #all_posts -->
 	  		
-	  		<?php require_once('footer.php'); ?>
+	  		<?php get_footer(); ?>

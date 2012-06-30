@@ -1,8 +1,14 @@
-			<?php require_once('header.php'); ?>
+<?php
+	/*
+	Template Name: Resume
+	*/
+?>
+
+			<?php get_header(); ?>
 			
 			<div class="resume">
 				<div class="profile">
-					<img class="pic_border" src="img/resume_pic.jpg" alt="Profile Pic">
+					<img class="pic_border" src="<?php bloginfo('template_url'); ?>/img/resume_pic.jpg" alt="Profile Pic">
 					<div class="profile_content">
 						<p class="intro">Community Manager y Diseñador Web, apasionado del Diseño, Redes Sociales, el Cine, la Fotografía, la Internet, la Música, la Coreografía y lo Digital. Bloguero empedernido y amante del Estilo Urbano.</p>
 						<p class="knowledge">Poseo conocimientos en Social Media, Blogs, Medios Digitales, UX y amplia experiencia en la públición y administración de contenido en las plataforma Wordpress y Joomla.</p>
@@ -162,19 +168,19 @@
 					<div class="jobs_container">
 						<div class="jobs">
 							<div class="job full">
-								<img src="img/isis.jpg" class="pic_border">
+								<img src="<?php bloginfo('template_url'); ?>/img/isis.jpg" class="pic_border">
 								<h2>Isis Zeledon - <span>Interactive Designer / Consultant at Nobox</span></h2>
 								<p class="quote">“Juan Carlos is a hard worker and very talented in the fast-paced online world. We work together on several Interactive projects and he's a genuine team player. I recommend him for whatever creative venture he pursues”.</p>
 								<p class="dates">Abril 12, 2011.</p>
 							</div>
 							<div class="job full">
-								<img src="img/isis.jpg" class="pic_border">
+								<img src="<?php bloginfo('template_url'); ?>/img/isis.jpg" class="pic_border">
 								<h2>Isis Zeledon - <span>Interactive Designer / Consultant at Nobox</span></h2>
 								<p class="quote">“Juan Carlos is a hard worker and very talented in the fast-paced online world. We work together on several Interactive projects and he's a genuine team player. I recommend him for whatever creative venture he pursues”.</p>
 								<p class="dates">Abril 12, 2011.</p>
 							</div>
 							<div class="job full">
-								<img src="img/isis.jpg" class="pic_border">
+								<img src="<?php bloginfo('template_url'); ?>/img/isis.jpg" class="pic_border">
 								<h2>Isis Zeledon - <span>Interactive Designer / Consultant at Nobox</span></h2>
 								<p class="quote">“Juan Carlos is a hard worker and very talented in the fast-paced online world. We work together on several Interactive projects and he's a genuine team player. I recommend him for whatever creative venture he pursues”.</p>
 								<p class="dates">Abril 12, 2011.</p>
@@ -184,4 +190,4 @@
 				</div><!-- .renglon .recomendation -->
 			</div><!-- .resume -->
 			
-			<?php require_once('footer.php'); ?>
+			<?php get_footer(); ?>

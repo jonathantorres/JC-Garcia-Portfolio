@@ -46,7 +46,7 @@
   
   <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?> >
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
@@ -84,7 +84,7 @@
 						</form>
 		  			</div><!-- .search_bar -->
 		  			
-		  			<div class="search">
+		  			<div class="search_area">
 		  				<a id="open_search" href="#"></a>
 		  			</div><!-- .search -->
 		  		</header><!-- #search_social -->
@@ -92,12 +92,12 @@
 		  		<header id="main_head">
 		  			<h1 class="main_title">
 		  				<span class="slogan"></span>
-		  				<a href="index.php">Juan Carlos Garcia</a>
+		  				<a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
 		  			</h1><!-- .main_title -->
 		  			
 		  			<nav id="main_nav">
 		  				<ul class="nav_list">
-		  					<li><a id="resume_btn" href="resume.php">RESUME</a></li>
+		  					<li><a id="resume_btn" href="<?php echo get_page_link(13); ?>">RESUME</a></li>
 		  					<li><a id="contact_btn" href="#">CONTACTO</a></li>
 		  				</ul>
 		  			</nav><!-- #main_nav -->

@@ -8,7 +8,7 @@
 						</div>
 						
 						<div class="img_holder">
-	  						<img src="img/post_image.jpg" alt="Post">
+	  						<img src="<?php bloginfo('template_url'); ?>/img/post_image.jpg" alt="Post">
 	  					</div>
 					</a>
 	  				<h3><a href="#">Essentials: Lincoln</a></h3>
@@ -25,7 +25,7 @@
 						</div>
 						
 						<div class="img_holder">
-							<img src="img/instagram_image.jpg" alt="Post">
+							<img src="<?php bloginfo('template_url'); ?>/img/instagram_image.jpg" alt="Post">
 						</div>
 					</a>
 	  				<h3><a href="#">Agriculture</a></h3>
@@ -41,7 +41,7 @@
 						</div>
 						
 						<div class="img_holder">
-							<img src="img/flickr_image.jpg" alt="Post">
+							<img src="<?php bloginfo('template_url'); ?>/img/flickr_image.jpg" alt="Post">
 						</div>
 	  				</a>
 	  				<h3><a href="#">Fiddler of San Juan</a></h3>
@@ -63,7 +63,7 @@
 							<p class="post_date">Abril, 10, 2012</p>
 						</div>
 		  				<div class="img_holder">
-		  					<img src="img/portfolio_image.jpg" alt="Post">
+		  					<img src="<?php bloginfo('template_url'); ?>/img/portfolio_image.jpg" alt="Post">
 		  				</div>
 	  				</a>
 	  				
