@@ -322,7 +322,7 @@ div.social, div.social div { float: left; }
 div.facebook_likes { margin: 0px 0px 0px -23px; }
 
 /* Search Area --------------------------------------- */
-.search {
+.search_area {
 	float: left;
 	display: block;
 	width: 50px;

@@ -32,7 +32,7 @@ JCGarcia.Site = new function() {
 		$j('#open_search').click(function(e) {
 			e.preventDefault();
 			$j(this).animate( { opacity: 0 }, 'fast', function() {
-				$j('.search').css( { display: 'none' } );
+				$j('.search_area').css( { display: 'none' } );
 				$j('.search_bar').css( { display: 'block' } );
 				$j('.search_bar').animate( { opacity: 1.0 } );
 				$j('#s').focus();
@@ -44,7 +44,7 @@ JCGarcia.Site = new function() {
 		$j('#s').blur(function(e) {
 			if (isSearchDisplayed) {
 				$j('.search_bar').css( { display: 'none', opacity: 0.0 } );
-				$j('.search').css( { display: 'block' } );
+				$j('.search_area').css( { display: 'block' } );
 				$j('#open_search').css( { opacity: 1.0 } );
 			}
 		});
@@ -209,23 +209,25 @@ JCGarcia.Site = new function() {
 }
 
 $j(document).ready(function(e) {
-	var page = $j('#main_content').children().first().attr('class');
-	//console.log(page);
+	var page = $j('body').attr('class');
+	//console.log('page: ' + page);
 	
 	JCGarcia.Site.init();
+	//console.log('init');
 	
-	switch (page) {
-		case 'home' : 
-			JCGarcia.Site.home();
-			break;
-			
-		case 'single' : 
-			JCGarcia.Site.single();
-			break;
-			
-		case 'resume' : 
-			JCGarcia.Site.resume();
-			break;
+	if (page.indexOf('home') >= 0 || page.indexOf('search') >= 0) {
+		JCGarcia.Site.home();
+		//console.log('home');
+	} 
+	
+	else if (page.indexOf('single') >= 0) {
+		JCGarcia.Site.single();
+		//console.log('single');
+	} 
+	
+	else if (page.indexOf('resume') >= 0) {
+		//console.log('resume');
+		JCGarcia.Site.resume();
 	}
 });
 
