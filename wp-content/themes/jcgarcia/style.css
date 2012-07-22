@@ -516,7 +516,7 @@ span.slogan {
 #all_posts .rollover .over_img.instagram { background: url(img/instagram_over_icon.png) no-repeat; }
 #all_posts .rollover .over_img.wp { background: url(img/wp_over_icon.png) no-repeat; width: 60px; height: 60px; }
 #all_posts .rollover .over_img.flickr { background: url(img/flickr_over_icon.png) no-repeat; width: 80px; }
-#all_posts .rollover .over_img.portfolio { background: url(img/flickr_over_icon.png) no-repeat; width: 80px; }
+#all_posts .rollover .over_img.portfolio { background: url(img/portfolio_over_icon.png) no-repeat; width: 80px; height: 80px; }
 
 span.post_type.wp { background: url(img/post_icon.jpg) no-repeat 177px 0px;  }
 span.post_type.portfolio { background: url(img/portfolio_icon.jpg) no-repeat 167px -2px; padding: 1px 38px 0px 0px!important; }
@@ -559,7 +559,7 @@ div.single {
 .single .post_meta .post_category { margin: 0px 10px 0px 0px; }
 .single .post_meta .post_category span, .single .post_meta .post_comments span { font-family: 'Quicksand Bold'; margin: -1px 5px 0px 0px; }
 .single .post_meta .post_comments { float: right; }
-.single img { display: block; margin: 10px 0px 10px 0px; }
+div.single img { display: block; margin: 10px 0px 10px 0px; }
 .single .social_sharing { 
 	display: block;
 	margin: 20px 0px 15px 0px;
@@ -624,12 +624,12 @@ ul.sidebar {
 	color: #C3C3C3;
 	padding: 0px 0px 0px 35px;
 }
-.comments_form ul li input[type="text"]#username { background: #484848 url(img/comment_name_icon.png) no-repeat 7px 4px; }
-.comments_form ul li input[type="text"]#email { background: #484848 url(img/comment_email_icon.png) no-repeat 7px 7px; }
+.comments_form ul li input[type="text"]#username { background: #484848 url(img/comment_name_icon.png) no-repeat 8px 7px; }
+.comments_form ul li input[type="text"]#email { background: #484848 url(img/comment_email_icon.png) no-repeat 8px 9px; }
 .comments_form ul li textarea#message {
 	height: 100px;
 	padding: 5px 0px 0px 35px;
-	background: #484848 url(img/comment_message_icon.png) no-repeat 7px 7px;
+	background: #484848 url(img/comment_message_icon.png) no-repeat 8px 9px;
 }
 .comments_form ul li input[type="submit"] { float: right; margin: 0px; }
 
@@ -776,12 +776,12 @@ ul.sidebar {
 	width: 300px;
 }
 .contact_form #contact_jc ul li input[type="text"], .contact_form #contact_jc ul li textarea { width: 270px; height: 40px; }
-.contact_form #contact_jc ul li input[type="text"]#email { background: #484848 url(img/comment_email_icon.png) no-repeat 7px 13px; }
-.contact_form #contact_jc ul li input[type="text"]#username { background: #484848 url(img/comment_name_icon.png) no-repeat 7px 10px; }
+.contact_form #contact_jc ul li input[type="text"]#email { background: #484848 url(img/comment_email_icon.png) no-repeat 8px 14px; }
+.contact_form #contact_jc ul li input[type="text"]#username { background: #484848 url(img/comment_name_icon.png) no-repeat 10px 12px; }
 .contact_form #contact_jc ul li textarea#message { 
 	height: 100px;
 	padding: 5px 0px 0px 35px;
-	background: #484848 url(img/comment_message_icon.png) no-repeat 7px 7px;
+	background: #484848 url(img/comment_message_icon.png) no-repeat 8px 10px;
 }
 .contact_form #contact_jc ul li input[type="submit"] { float: right; margin: 0px -7px 0px 0px; padding: 8px 26px; }
 .contact_form #other_contacts {
