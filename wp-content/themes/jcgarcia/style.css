@@ -443,7 +443,7 @@ span.slogan {
 	position: relative;
 	list-style: none;
 	margin: 0px;
-	padding: 0px;
+	padding: 0px 0px 20px 0px;
 	z-index: 9994;
 }
 #all_posts li { }
