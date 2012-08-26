@@ -25,13 +25,12 @@
 			<?php foreach ($comments as $comment) : ?>
 				<li <?php comment_class(); ?>>
 					<?php echo get_avatar($comment->comment_author_email, 48); ?>
-					<!-- <img class="comment_avatar" src="<?php bloginfo('template_url'); ?>/img/comment_avatar.jpg" alt="Thumb"> -->
 					<div class="comment_content">
 						<div class="comment_meta">
 							<h4 class="commenter_name"><?php comment_author(); ?></h4>
 							<span class="comment_date"><?php comment_date('F j, Y'); ?></span>
 						</div>
-						<p><?php comment_text(); ?></p>
+						<?php comment_text(); ?>
 					</div>
 				</li>
 			<?php endforeach; ?>
