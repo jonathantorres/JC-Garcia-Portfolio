@@ -1,58 +1,70 @@
-<div class="comments">
-	<h3 class="comments_title">COMENTARIOS</h3>
-	<ol class="comments_list">
-		<li>
-			<img class="comment_avatar" src="<?php bloginfo('template_url'); ?>/img/comment_avatar.jpg" alt="Thumb">
-			<div class="comment_content">
-				<div class="comment_meta">
-					<h4 class="commenter_name">Juan Carlos Garcia</h4>
-					<span class="comment_date">una semana atras</span>
-				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p>
-			</div>
-		</li>
-		
-		<li>
-			<img class="comment_avatar" src="<?php bloginfo('template_url'); ?>/img/comment_avatar.jpg" alt="Thumb">
-			<div class="comment_content">
-				<div class="comment_meta">
-					<h4 class="commenter_name">Juan Carlos Garcia</h4>
-					<span class="comment_date">una semana atras</span>
-				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p>
-			</div>
-		</li>
-		
-		<li>
-			<img class="comment_avatar" src="<?php bloginfo('template_url'); ?>/img/comment_avatar.jpg" alt="Thumb">
-			<div class="comment_content">
-				<div class="comment_meta">
-					<h4 class="commenter_name">Juan Carlos Garcia</h4>
-					<span class="comment_date">una semana atras</span>
-				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p>
-			</div>
-		</li>
-	</ol>
+	<!-- Commenting functionality!!!!!! -->
+	<?php
 	
-	<h3 class="reply_title">AÑADIR COMENTARIO</h3>
-	<form class="comments_form" action="#" method="post">
-		<ul>
-			<li>
-				<label for="username">nombre</label>
-				<input type="text" id="username" name="username" placeholder="nombre">
-			</li>
-			<li>
-				<label for="email">e-mail</label>
-				<input type="text" id="email" name="email" placeholder="e-mail">
-			</li>
-			<li>
-				<label for="message">mensaje</label>
-				<textarea id="message" name="message" placeholder="mensaje"></textarea>
-			</li>
-			<li>
-				<input type="submit" class="gradient dark_button" id="send" name="send" value="Enviar">
-			</li>
-		</ul>
-	</form>
+		if ('comments.php' == basename($_SERVER['SCRIPT_FILENAME'])) die ('Please do not load this page directly. Thanks!');
+		
+		// if there's a password
+		if (!empty($post->post_password)) {
+			// and it doesn't match the cookie
+			if ($_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) {  
+		?>
+		
+		<p><?php _e('Password Protected'); ?></p>
+		<p><?php _e('Enter the password to view comments.'); ?></p>
+		
+		<?php return;
+		
+			}
+		}
+	?>
+	
+<div class="comments">
+	<?php if ($comments) : ?>
+		<h3 class="comments_title">COMENTARIOS</h3>
+		<ol class="comments_list">
+			<?php foreach ($comments as $comment) : ?>
+				<li <?php comment_class(); ?>>
+					<?php echo get_avatar($comment->comment_author_email, 48); ?>
+					<!-- <img class="comment_avatar" src="<?php bloginfo('template_url'); ?>/img/comment_avatar.jpg" alt="Thumb"> -->
+					<div class="comment_content">
+						<div class="comment_meta">
+							<h4 class="commenter_name"><?php comment_author(); ?></h4>
+							<span class="comment_date"><?php comment_date('F j, Y'); ?></span>
+						</div>
+						<p><?php comment_text(); ?></p>
+					</div>
+				</li>
+			<?php endforeach; ?>
+		</ol>
+	<?php endif; ?>
+	
+	<?php if (comments_open()) : ?>
+		<h3 class="reply_title">AÑADIR COMENTARIO</h3>
+		<form class="comments_form" action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post">
+			<ul>
+				<!-- If The Admin or a user is logged in -->
+				<?php if ($user_ID) : ?>
+					<p>Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a> - Click <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Log out of this account">here</a> to logout.</p>
+				<?php else : ?>
+					<li>
+						<label for="author">nombre</label>
+						<input type="text" id="author" name="author" placeholder="nombre" value="<?php echo $comment_author; ?>">
+					</li>
+					<li>
+						<label for="email">e-mail</label>
+						<input type="text" id="email" name="email" placeholder="e-mail" value="<?php echo $comment_author_email; ?>">
+					</li>
+				<?php endif; ?>
+				<li>
+					<label for="comment">mensaje</label>
+					<textarea id="comment" name="comment" placeholder="mensaje"></textarea>
+				</li>
+				<li>
+					<input type="submit" class="gradient dark_button" id="send" name="send" value="Enviar">
+				</li>
+				<input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" >
+				<?php do_action('comment_form', $post->ID); ?>
+			</ul>
+		</form>
+	<?php endif; ?>
 </div><!-- .comments -->

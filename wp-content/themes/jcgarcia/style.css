@@ -593,7 +593,7 @@ ul.sidebar {
 .comments .comments_list li { overflow: hidden; border-bottom: dotted 1px #CCC; margin: 0px 0px 20px 0px; }
 .comments .comments_list li:last-child { border: none; }
 .comments .comments_list li div.comment_content { display: block; float: right; width: 360px; }
-.comments .comments_list li img.comment_avatar { 
+.comments .comments_list li img.avatar { 
 	display: block; 
 	float: left; 
 	margin: 0px 10px 0px 0px; 
@@ -636,9 +636,9 @@ ul.sidebar {
 	color: #C3C3C3;
 	padding: 0px 0px 0px 35px;
 }
-.comments_form ul li input[type="text"]#username { background: #484848 url(img/comment_name_icon.png) no-repeat 8px 7px; }
+.comments_form ul li input[type="text"]#author { background: #484848 url(img/comment_name_icon.png) no-repeat 8px 7px; }
 .comments_form ul li input[type="text"]#email { background: #484848 url(img/comment_email_icon.png) no-repeat 8px 9px; }
-.comments_form ul li textarea#message {
+.comments_form ul li textarea#comment {
 	height: 100px;
 	padding: 5px 0px 0px 35px;
 	background: #484848 url(img/comment_message_icon.png) no-repeat 8px 9px;
