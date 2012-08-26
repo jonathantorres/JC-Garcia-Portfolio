@@ -213,21 +213,13 @@ $j(document).ready(function(e) {
 	//console.log('page: ' + page);
 	
 	JCGarcia.Site.init();
-	//console.log('init');
 	
-	if (page.indexOf('home') >= 0 || page.indexOf('search') >= 0) {
-		JCGarcia.Site.home();
-		//console.log('home');
-	} 
-	
-	else if (page.indexOf('single') >= 0) {
-		JCGarcia.Site.single();
-		//console.log('single');
-	} 
-	
-	else if (page.indexOf('resume') >= 0) {
+	if (page.indexOf('page-template-resume-php') >= 0) {
 		//console.log('resume');
 		JCGarcia.Site.resume();
+	} else {
+		JCGarcia.Site.home();
+		//console.log('home or other page');
 	}
 });
 
