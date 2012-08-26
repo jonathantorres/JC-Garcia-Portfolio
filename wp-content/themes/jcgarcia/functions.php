@@ -17,7 +17,7 @@ if (function_exists('add_theme_support')) {
 	add_theme_support('post-thumbnails');
 
 	//additional image sizes
-	add_image_size('post-thumb', 201, 143);
+	add_image_size('post-thumb', 201, 143, true);
 }
 
 ?>
