@@ -525,7 +525,7 @@ span.post_type.flickr { background: url(img/flickr_icon.jpg) no-repeat 168px 0px
 span.post_type.twitter { background: url(img/tweet_icon.jpg) no-repeat 167px -2px; padding: 1px 35px 0px 0px!important; }
 
 
-/* Single Post --------------------------------------- */
+/* Single Post - Page --------------------------------------- */
 div.single {
 	display: block;
 	float: left;
@@ -559,7 +559,14 @@ div.single {
 .single .post_meta .post_category { margin: 0px 10px 0px 0px; }
 .single .post_meta .post_category span, .single .post_meta .post_comments span { font-family: 'Quicksand Bold'; margin: -1px 5px 0px 0px; }
 .single .post_meta .post_comments { float: right; }
-div.single img { display: block; margin: 10px 0px 10px 0px; }
+div.single img {
+	display: block;
+	margin: 10px 0px 10px 0px;
+	border: solid #FFF 5px;
+	-webkit-box-shadow: 0 0 5px #CCC;
+	-moz-box-shadow: 0 0 5px #CCC;
+	box-shadow: 0 0 5px #CCC;
+}
 .single .social_sharing { 
 	display: block;
 	margin: 20px 0px 15px 0px;
@@ -590,6 +597,10 @@ ul.sidebar {
 	float: left; 
 	margin: 0px 10px 0px 0px; 
 	padding: 0px;
+	border: none;
+	-webkit-box-shadow: 0 0 0px #CCC;
+	-moz-box-shadow: 0 0 0px #CCC;
+	box-shadow: 0 0 0px #CCC;
 }
 .comments .comments_list div.comment_meta { display: block; overflow: hidden; }
 .comments .comments_list li h4.commenter_name { 
