@@ -95,23 +95,35 @@
 		  				<a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
 		  			</h1><!-- .main_title -->
 		  			
-		  			<nav id="main_nav">
-		  				<ul class="nav_list">
-		  					<li><a id="resume_btn" href="<?php echo get_page_link(13); ?>">RESUME</a></li>
-		  					<li><a id="contact_btn" href="#">CONTACTO</a></li>
-		  				</ul>
-		  			</nav><!-- #main_nav -->
+		  			<?php if (is_home() || is_search()) : ?>
+		  				<nav id="main_nav">
+			  				<ul class="nav_list">
+			  					<li><a id="resume_btn" href="<?php echo get_page_link(13); ?>">RESUME</a></li>
+			  					<li><a id="contact_btn" href="#">CONTACTO</a></li>
+			  				</ul>
+			  			</nav><!-- #main_nav -->
+			  			
+			  			<div class="filter default">
+		  					<span>Filtrar Contenido</span>
+		  					<ul class="filter_dropdown">
+		  						<li><input type="checkbox">Instagram</li>
+		  						<li><input type="checkbox">Flickr</li>
+		  						<li><input type="checkbox">Blog</li>
+		  						<li><input type="checkbox">Twitter</li>
+		  						<li><input type="checkbox">Portafolio</li>
+		  					</ul>
+		  				</div><!-- .filter -->
+		  			<?php else : ?>
+		  				<nav id="main_nav" class="right">
+			  				<ul class="nav_list">
+			  					<li><a id="resume_btn" href="<?php echo get_page_link(13); ?>">RESUME</a></li>
+			  					<li><a href="<?php bloginfo('url'); ?>">PORTFOLIO</a></li>
+			  					<li><a id="contact_btn" href="#">CONTACTO</a></li>
+			  				</ul>
+			  			</nav><!-- #main_nav -->
+		  			<?php endif; ?>
 		  			
-		  			<div class="filter default">
-	  					<span>Filtrar Contenido</span>
-	  					<ul class="filter_dropdown">
-	  						<li><input type="checkbox">Instagram</li>
-	  						<li><input type="checkbox">Flickr</li>
-	  						<li><input type="checkbox">Blog</li>
-	  						<li><input type="checkbox">Twitter</li>
-	  						<li><input type="checkbox">Portafolio</li>
-	  					</ul>
-	  				</div>
+		  			
 		  		</header><!-- #main_head -->
 			</section><!-- #page_header -->
 		</div><!-- .top_of_page -->
