@@ -9,31 +9,52 @@
 		  				$postClass;
 		  				$postName;
 		  				
-		  				//Need to make a switch for everything else : instagram, flickr etc ect
-		  				if ($category == 'Portfolio') {
-			  				$postClass = 'portfolio';
-			  				$postName = 'portfolio';
-		  				} else {
-			  				$postClass = 'wp';
-			  				$postName = 'post';
-		  				}
+		  				//Select Post Class : instagram, wp, twitter, flickr.
+		  				switch ($category) {
+						    case 'Portfolio':
+						        $postClass = 'portfolio';
+						        $postName = 'portfolio';
+						        break;
+						    case 'Twitter':
+						        $postClass = 'twitter';
+						        $postName = 'twitter';
+						        break;
+						    case 'Instagram':
+						        $postClass = 'instagram';
+						        $postName = 'instagram';
+						        break;
+						    case 'Flickr':
+						        $postClass = 'flickr';
+						        $postName = 'flickr';
+						        break;
+						    default:
+						        $postClass = 'wp';
+						        $postName = 'post';
+						        break;
+						}
 		  			?>
+		  			
 		  			<li class="square <?php echo $postClass; ?>">
-		  				<a href="<?php the_permalink(); ?>">
-			  				<div class="rollover">
-								<span class="over_img <?php echo $postClass; ?>"></span>
-								<p class="post_date"><?php the_time('F, j, Y'); ?></p>
-							</div>
-							
-							<div class="img_holder">
-								<?php if (has_post_thumbnail()) : ?>
-								<?php the_post_thumbnail('post-thumb'); else : ?>
-		  							<img src="<?php bloginfo('template_url'); ?>/img/post_image.jpg" alt="Post">
-		  						<?php endif; ?>
-		  					</div>
-						</a>
+		  				<?php if ($category != 'Twitter') : ?>
+			  				<a href="<?php the_permalink(); ?>">
+				  				<div class="rollover">
+									<span class="over_img <?php echo $postClass; ?>"></span>
+									<p class="post_date"><?php the_time('F, j, Y'); ?></p>
+								</div>
+								
+								<div class="img_holder">
+									<?php if (has_post_thumbnail()) : ?>
+									<?php the_post_thumbnail('post-thumb'); else : ?>
+			  							<img src="<?php bloginfo('template_url'); ?>/img/post_image.jpg" alt="Post">
+			  						<?php endif; ?>
+			  					</div>
+							</a>
+						<?php else : ?>
+							<p>The Tweet content...</p>
+						<?php endif; ?>
+						
 		  				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-		  				<?php if ($category != 'Portfolio') the_excerpt(); ?>
+		  				<?php if ($postClass == 'wp') the_excerpt(); ?>
 		  				<span class="post_type <?php echo $postClass; ?>"><?php echo $postName; ?></span>
 		  			</li>
 		  		<?php endwhile; else: ?>
