@@ -74,7 +74,7 @@
 							</script>
 		  				</div><!-- .twitter_btns -->
 						<div class="facebook_likes">
-							<div class="fb-like" data-href="https://www.facebook.com/juancarlosangustia" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false"></div>
+							<div class="fb-like" data-href="http://www.juancarlosangustia.com/" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false"></div>
 						</div>
 		  			</div><!-- .social -->
 		  			

@@ -22,16 +22,7 @@
 	  				<?php the_content(); ?>
 	  			<?php endwhile; endif; ?>
 				
-				<div class="social_sharing">
-					<div class="twitter_btns">
-	  					<a href="https://twitter.com/share" class="twitter-share-button" data-via="memoplus">Tweet</a>
-						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-						</script>
-	  				</div><!-- .twitter_btns -->
-					<div class="facebook_likes">
-						<div class="fb-like" data-href="https://www.facebook.com/juancarlosangustia" data-send="false" data-width="300" data-show-faces="false"></div>
-					</div><!-- .facebook_likes -->
-				</div><!-- .social_sharing -->
+				<div class="social_sharing"></div>
 				
 				<?php comments_template(); ?>
 				

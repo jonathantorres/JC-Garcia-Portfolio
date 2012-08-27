@@ -93,7 +93,7 @@ JCGarcia.Site = new function() {
 			if (scrollTop < 10) {
 				$j('#page_header').removeClass();
 			} else {
-				$j('#page_header').addClass('shadow');
+				$j('#page_header').addClass('dropshadow');
 			}
 		});
 		
