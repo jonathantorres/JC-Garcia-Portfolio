@@ -2,7 +2,7 @@
 
 /* Control excerpt length */
 function control_excerpt_length($length) {
-	return 15;
+	return 14;
 }
 add_filter('excerpt_length', 'control_excerpt_length', 999);
 
