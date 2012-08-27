@@ -564,10 +564,6 @@ div.single {
 div.single img {
 	display: block;
 	margin: 10px 0px 10px 0px;
-	border: solid #FFF 5px;
-	-webkit-box-shadow: 0 0 5px #CCC;
-	-moz-box-shadow: 0 0 5px #CCC;
-	box-shadow: 0 0 5px #CCC;
 }
 .single .social_sharing { 
 	display: block;
@@ -598,10 +594,6 @@ ul.sidebar {
 	float: left; 
 	margin: 0px 10px 0px 0px; 
 	padding: 0px;
-	border: none;
-	-webkit-box-shadow: 0 0 0px #CCC;
-	-moz-box-shadow: 0 0 0px #CCC;
-	box-shadow: 0 0 0px #CCC;
 }
 .comments .comments_list div.comment_meta { display: block; overflow: hidden; }
 .comments .comments_list li h4.commenter_name { 
