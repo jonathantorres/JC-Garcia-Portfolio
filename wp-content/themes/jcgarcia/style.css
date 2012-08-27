@@ -52,8 +52,8 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
  * Also: hot pink! (or customize the background color to match your design)
  */
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #CCC; color: #fff; text-shadow: none; }
+::-moz-selection { background: #414141; color: #fff; text-shadow: none; }
+::selection { background: #414141; color: #fff; text-shadow: none; }
 
 
 /* =============================================================================
@@ -249,7 +249,14 @@ td { vertical-align: top; }
 }
 
 /* Global Stuff --------------------------------------- */
-body { padding: 0; background-image: url(img/main_bg.jpg); background-repeat: repeat; background-attachment: fixed; }
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #131313;
+	padding: 0;
+	background-image: url(img/main_bg.jpg); 
+	background-repeat: repeat; 
+	background-attachment: fixed; 
+}
 a, a:active, a:link, a:visited { color: #000; text-decoration: underline; }
 a:hover { text-decoration: none; }
 h1 { font-size: 1.7em; }
@@ -458,7 +465,7 @@ span.slogan {
 }
 #all_posts li h3 a, #all_posts li h3 a:active, #all_posts li h3 a:link, #all_posts li h3 a:visited { color: #000; text-decoration: none; }
 #all_posts li h3 a:hover { text-decoration: underline; }
-#all_posts li p { margin: 0px; padding: 0px; font-size: 0.8em; }
+#all_posts li p { margin: 0px; padding: 0px; font-size: 0.9em; }
 #all_posts li.square {
 	display: block;
 	float: left;
@@ -542,6 +549,7 @@ div.single {
 	box-shadow: 0 0 5px #CCC;
 	background: #FFF;
 }
+.single p { line-height: 22px; }
 .single h1.post_title { font-size: 1.5em; }
 .single .post_meta {
 	display: block;
