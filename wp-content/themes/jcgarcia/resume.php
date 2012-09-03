@@ -15,7 +15,7 @@
 						<h5 class="birth_title">Naci | Born</h5>
 						<p class="birth_date">17 de Marzo 1985 | Mar 17th, 1985</p>
 						<a href="http://linkedin.com/in/jcangustia/es" target="_blank" class="dark_button linkedin">Linkedin</a>
-						<a href="#" class="dark_button contacto">Contacto</a>
+						<a id="contact_button" href="#" class="dark_button contacto">Contacto</a>
 					</div>
 				</div><!-- .profile -->
 				

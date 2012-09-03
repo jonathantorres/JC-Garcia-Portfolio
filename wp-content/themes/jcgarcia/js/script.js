@@ -99,24 +99,27 @@ JCGarcia.Site = new function() {
 		
 		/* Open contact lightbox */
 		$j('#contact_btn').click(function(e) {
-			var $contactContainer = $j('div.contact_container');
-			var $contactForm = $j('.contact_form');
+			e.preventDefault();
+			JCGarcia.Site.contact();
+		});
+	}
+	
+	this.contact = function() {
+		var $contactContainer = $j('div.contact_container');
+		var $contactForm = $j('.contact_form');
+		
+		$lightBox.fadeIn('fast', function() {
+			$contactContainer.fadeIn('fast');
+			$contactForm.fadeIn('fast');
+		});
+		
+		/* Close contact lightbox */
+		$j('#close_contact').click(function(e) {
 			e.preventDefault();
 			
-			$lightBox.fadeIn('fast', function() {
-				$contactContainer.fadeIn('fast');
-				$contactForm.fadeIn('fast');
-				console.log('fadein complete');
-			});
-			
-			/* Close contact lightbox */
-			$j('#close_contact').click(function(e) {
-				e.preventDefault();
-				
-				$contactContainer.fadeOut('fast');
-				$contactForm.fadeOut('fast', function() {
-					$lightBox.fadeOut('fast');
-				});
+			$contactContainer.fadeOut('fast');
+			$contactForm.fadeOut('fast', function() {
+				$lightBox.fadeOut('fast');
 			});
 		});
 	}
@@ -134,6 +137,12 @@ JCGarcia.Site = new function() {
 		resumeRenglons('div.renglon.projects', 324, 301, 23, 3);
 		resumeRenglons('div.renglon.education', 324, 301, 23, 3);
 		resumeRenglons('div.renglon.recomendation', 959, 936, 23, 1);
+		
+		/* Open contact lightbox */
+		$j('#contact_button').click(function(e) {
+			e.preventDefault();
+			JCGarcia.Site.contact();
+		});
 	}
 	
 	function resumeRenglons(renglon, itemWidth, thumbWidth, thumbMargin, itemsInView) {
