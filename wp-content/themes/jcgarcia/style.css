@@ -706,6 +706,7 @@ ul.sidebar {
 .resume .renglon .heading div.nav span.right { background: #535353 url(img/resume_arrow_right.png) no-repeat 8px 3px; }
 .resume .renglon .heading div.nav span.right:hover { background: #282828 url(img/resume_arrow_right.png) no-repeat 8px 3px; }
 .resume .renglon .jobs_container { overflow: hidden; position: relative; height: 106px; }
+.resume .renglon .jobs_container.recomended { height: 150px; }
 .resume .renglon .jobs { overflow: hidden; position: absolute; }
 .resume .renglon .jobs .job { width: 301px; float: left; margin: 0px 23px 0px 0px; }
 .resume .renglon .jobs .job.medium { width: 400px; }
