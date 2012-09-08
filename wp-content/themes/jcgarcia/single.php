@@ -13,7 +13,7 @@
 			  				<?php if ($category == 'Portfolio') : ?>
 			  					Portfolio
 							<?php else : ?>
-	  							Post
+	  							<?php the_time('F j, Y'); ?>
 	  						<?php endif; ?>
 		  				</span>
 		  				<span class="post_category"><span>Categoria:</span> <?php echo $category; ?> </span>
