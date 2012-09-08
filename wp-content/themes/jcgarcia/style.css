@@ -712,7 +712,7 @@ ul.sidebar {
 .resume .renglon .jobs .job.medium { width: 400px; }
 .resume .renglon .jobs .job.large { width: 500px; }
 .resume .renglon .jobs .job.full { width: 936px; }
-.resume .renglon.recomendation .jobs .job.full img { float: left; margin: 0px 15px 25px 0px; }
+.resume .renglon.recomendation .jobs .job.full img { float: left; margin: 0px 15px 50px 0px; }
 .resume .renglon .jobs .job.third { margin: 0px; }
 .resume .renglon .jobs .job h2, .resume .renglon .jobs .job h3 { font-size: 1.1em; font-weight: normal; margin: 0px; }
 .resume .renglon .jobs .job h3, .resume .renglon.recomendation .jobs .job h2 span { font-family: 'Quicksand Light'; }
