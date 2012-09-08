@@ -49,11 +49,12 @@
 			  						<?php endif; ?>
 			  					</div>
 							</a>
+							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 						<?php else : ?>
-							<p>The Tweet content...</p>
+							<p><?php the_title(); ?></p>
+							<h3>Tweet</h3>
 						<?php endif; ?>
 						
-		  				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 		  				<?php if ($postClass == 'wp') the_excerpt(); ?>
 		  				<span class="post_type <?php echo $postClass; ?>"><?php echo $postName; ?></span>
 		  			</li>
