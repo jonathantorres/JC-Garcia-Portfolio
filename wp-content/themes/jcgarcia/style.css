@@ -455,18 +455,18 @@ span.slogan {
 	padding: 0px 0px 20px 0px;
 	z-index: 9994;
 }
-#all_posts li { }
-#all_posts li img { display: block; }
-#all_posts li h3 {
+#all_posts div.square { }
+#all_posts div.square img { display: block; }
+#all_posts div.square h3 {
 	font-family: 'Exo Bold';
 	font-size: 1.3em;
 	margin: 7px 0px 5px 0px; 
 	padding: 0px;
 }
-#all_posts li h3 a, #all_posts li h3 a:active, #all_posts li h3 a:link, #all_posts li h3 a:visited { color: #000; text-decoration: none; }
-#all_posts li h3 a:hover { text-decoration: underline; }
-#all_posts li p { margin: 0px; padding: 0px; font-size: 0.9em; }
-#all_posts li.square {
+#all_posts div.square h3 a, #all_posts div.square h3 a:active, #all_posts div.square h3 a:link, #all_posts div.square h3 a:visited { color: #000; text-decoration: none; }
+#all_posts div.square h3 a:hover { text-decoration: underline; }
+#all_posts div.square p { margin: 0px; padding: 0px; font-size: 0.9em; }
+#all_posts div.square {
 	display: block;
 	float: left;
 	width: 201px;
@@ -480,8 +480,8 @@ span.slogan {
 	box-shadow: 0 0 5px #CCC;
 	background: #FFF;
 }
-#all_posts li.square a { display: block; }
-#all_posts li.square.twitter p a, #all_posts li.square.twitter p a:link, #all_posts li.square.twitter p a:visited, #all_posts li.square.twitter p a:active { color: #ed145b; }
+#all_posts div.square a { display: block; }
+#all_posts div.square.twitter p a, #all_posts div.square.twitter p a:link, #all_posts div.square.twitter p a:visited, #all_posts div.square.twitter p a:active { color: #ed145b; }
 #all_posts div.img_holder {
 	background: url(img/pixels_bg.jpg) repeat;
 }
@@ -582,7 +582,7 @@ div.single img {
 .single .social_sharing .facebook_likes { margin: 0px; }
 
 /* Sidebar --------------------------------------- */
-ul.sidebar {
+div.sidebar {
 	float: right;
 	width: 480px;
 }

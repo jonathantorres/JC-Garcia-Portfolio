@@ -1,6 +1,6 @@
-			<ul id="all_posts" class="sidebar">
+			<div id="all_posts" class="sidebar">
 	  			<!-- WP Post -->
-	  			<li class="square wp">
+	  			<div class="square wp">
 	  				<a href="#">
 		  				<div class="rollover">
 							<span class="over_img wp"></span>
@@ -14,10 +14,10 @@
 	  				<h3><a href="#">Essentials: Lincoln</a></h3>
 	  				<p>Once a rising star on the surf circuit, Lincoln Eather now makes his living developing web-based brands and building...</p>
 	  				<span class="post_type wp">post</span>
-	  			</li>
+	  			</div>
 	  			
 	  			<!-- Instagram Post -->
-	  			<li class="square instagram">
+	  			<div class="square instagram">
 	  				<a href="#">
 	  					<div class="rollover">
 							<span class="over_img instagram"></span>
@@ -30,10 +30,10 @@
 					</a>
 	  				<h3><a href="#">Agriculture</a></h3>
 	  				<span class="post_type instagram">instagram</span>
-	  			</li>
+	  			</div>
 	  			
 	  			<!-- Flickr Post -->
-	  			<li class="square flickr">
+	  			<div class="square flickr">
 	  				<a href="#">
 	  					<div class="rollover">
 							<span class="over_img flickr"></span>
@@ -46,17 +46,17 @@
 	  				</a>
 	  				<h3><a href="#">Fiddler of San Juan</a></h3>
 	  				<span class="post_type flickr">flickr</span>
-	  			</li>
+	  			</div>
 	  			
 	  			<!-- Twitter Post -->
-	  			<li class="square twitter">
+	  			<div class="square twitter">
 	  				<p>Todo un año de buena experiencia, arte,lifestyle, eventos, música. Toda la <a href="#">@BuenaVibraPR</a> mostrada en video <a href="#">vimeo.com/36554938</a> <a href="#">#BVPR</a></p>
 	  				<h3><a href="#">Tweet</a></h3>
 	  				<span class="post_type twitter">twitter</span>
-	  			</li>
+	  			</div>
 	  			
 	  			<!-- Portfolio Post -->
-	  			<li class="square portfolio">
+	  			<div class="square portfolio">
 	  				<a href="#">
 		  				<div class="rollover">
 							<span class="over_img portfolio"></span>
@@ -69,12 +69,12 @@
 	  				
 	  				<h3><a href="#">Kisses for the Lens</a></h3>
 	  				<span class="post_type portfolio">portfolio</span>
-	  			</li>
+	  			</div>
 	  			
 	  			<!-- Twitter Post -->
-	  			<li class="square twitter">
+	  			<div class="square twitter">
 	  				<p>Todo un año de buena experiencia, arte,lifestyle, eventos, música. Toda la <a href="#">@BuenaVibraPR</a> mostrada en video <a href="#">vimeo.com/36554938</a> <a href="#">#BVPR</a></p>
 	  				<h3><a href="#">Tweet</a></h3>
 	  				<span class="post_type twitter">twitter</span>
-	  			</li>
-	  		</ul><!-- #all_posts -->
+	  			</div>
+	  		</div><!-- #all_posts -->

@@ -1,4 +1,4 @@
-		</section><!-- #main_content -->
+		</div><!-- #main_content -->
 	  	
   	</div><!-- #mainContainer -->
   	

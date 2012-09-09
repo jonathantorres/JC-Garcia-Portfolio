@@ -128,4 +128,4 @@
 			</section><!-- #page_header -->
 		</div><!-- .top_of_page -->
   		
-	  	<section id="main_content">
+	  	<div id="main_content">

@@ -1,6 +1,6 @@
 	  		<?php get_header(); ?>
 	  		
-	  		<ul id="all_posts">
+	  		<div id="all_posts">
 		  		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		  			<?php 
 		  				//The first category of the post
@@ -34,7 +34,7 @@
 						}
 		  			?>
 		  			
-		  			<li class="square <?php echo $postClass; ?>">
+		  			<div class="square <?php echo $postClass; ?>">
 		  				<?php if ($category != 'Twitter') : ?>
 			  				<a href="<?php the_permalink(); ?>">
 				  				<div class="rollover">
@@ -57,10 +57,14 @@
 						
 		  				<?php if ($postClass == 'wp') the_excerpt(); ?>
 		  				<span class="post_type <?php echo $postClass; ?>"><?php echo $postName; ?></span>
-		  			</li>
+		  			</div>
 		  		<?php endwhile; else: ?>
 	  				<p>No posts to display</p>
 	  			<?php endif; ?>
-	  		</ul><!-- #all_posts -->
+	  		</div><!-- #all_posts -->
+	  		
+	  		<div class="posts_navigation">
+	  			<?php posts_nav_link(); ?>
+	  		</div>
 	  		
 	  		<?php get_footer(); ?>
