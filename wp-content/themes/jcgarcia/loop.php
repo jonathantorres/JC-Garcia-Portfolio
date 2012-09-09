@@ -47,7 +47,7 @@
 							</a>
 							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 						<?php else : ?>
-							<p><?php the_title(); ?></p>
+							<p><?php the_content(); ?></p>
 							<h3>Tweet</h3>
 						<?php endif; ?>
 						
