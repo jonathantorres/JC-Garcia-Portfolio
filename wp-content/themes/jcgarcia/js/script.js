@@ -212,9 +212,17 @@ JCGarcia.Site = new function() {
 	
 	function masonSquares() {
 		var $container = $j('#all_posts');
+		$container.find('.square').each(function() {
+			 $j(this).css( { display : 'none', opacity: 0 } );
+		});
 		
 		$container.imagesLoaded(function() {
 			$container.masonry( { itemSelector : '.square' } );
+			
+			$container.find('.square').each(function() {
+				$j(this).css( { display : 'block' } );
+				$j(this).delay(Math.random() * 1000).animate( { opacity: 1 } );
+			});
 			
 			JCGarcia.Site.imageHolder();
 		});

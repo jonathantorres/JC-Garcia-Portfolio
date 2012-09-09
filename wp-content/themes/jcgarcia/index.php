@@ -8,7 +8,7 @@
 	  			<?php endif; ?>
 	  		</div><!-- #all_posts -->
 	  		
-	  		<div class="posts_navigation">
+	  		<div class="posts_navigation" style="display: none">
 	  			<?php posts_nav_link(); ?>
 	  		</div>
 	  		
