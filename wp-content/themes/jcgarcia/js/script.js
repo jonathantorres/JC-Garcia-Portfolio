@@ -152,7 +152,7 @@ JCGarcia.Site = new function() {
 			var rolloverHeight = $rollover.parent().find('.img_holder').height();
 			var rolloverWidth = $rollover.parent().find('.img_holder').width();
 			var $spanItem = $rollover.find('span.over_img');
-			$rollover.css( { height: rolloverHeight + 'px' } );
+			$rollover.css( { height: 143 + 'px' } );
 			
 			$spanItem.css( {
 				top: ($rollover.height() * 0.5 - $spanItem.height() * 0.5) + 'px',
