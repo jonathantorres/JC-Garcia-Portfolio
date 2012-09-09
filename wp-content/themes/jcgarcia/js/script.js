@@ -145,6 +145,34 @@ JCGarcia.Site = new function() {
 		});
 	}
 	
+	this.imageHolder = function() {
+		$j('.img_holder').each(function(i) {
+			var $item = $j(this);
+			var $rollover = $item.parent().find('.rollover');
+			var rolloverHeight = $rollover.parent().find('.img_holder').height();
+			var rolloverWidth = $rollover.parent().find('.img_holder').width();
+			var $spanItem = $rollover.find('span.over_img');
+			$rollover.css( { height: rolloverHeight + 'px' } );
+			
+			$spanItem.css( {
+				top: ($rollover.height() * 0.5 - $spanItem.height() * 0.5) + 'px',
+				left : ($rollover.width() * 0.5 - $spanItem.width() * 0.5) + 'px'
+			} );
+			
+			$item.hover(function(e) {
+				$rollover.css( { display: 'block' } );
+			}, function(e) {
+				if (!$rollover.is(':visible')) {
+					$rollover.css( { display: 'block' } );
+				}
+			});
+			
+			$item.parent().mouseleave(function(e) {
+				$rollover.css( { display: 'none' } );
+			});
+		});
+	}
+	
 	function resumeRenglons(renglon, itemWidth, thumbWidth, thumbMargin, itemsInView) {
 		var numOflistItems = 0;
 		var $arrowLeft = $j(renglon).find('span.left');
@@ -186,33 +214,9 @@ JCGarcia.Site = new function() {
 		var $container = $j('#all_posts');
 		
 		$container.imagesLoaded(function() {
-			$container.masonry( { itemSelector : '.square', singleMode : true } );
+			$container.masonry( { itemSelector : '.square' } );
 			
-			$j('.img_holder').each(function(i) {
-				var $item = $j(this);
-				var $rollover = $item.parent().find('.rollover');
-				var rolloverHeight = $rollover.parent().find('.img_holder').height();
-				var rolloverWidth = $rollover.parent().find('.img_holder').width();
-				var $spanItem = $rollover.find('span.over_img');
-				$rollover.css( { height: rolloverHeight + 'px' } );
-				
-				$spanItem.css( {
-					top: ($rollover.height() * 0.5 - $spanItem.height() * 0.5) + 'px',
-					left : ($rollover.width() * 0.5 - $spanItem.width() * 0.5) + 'px'
-				} );
-				
-				$item.hover(function(e) {
-					$rollover.css( { display: 'block' } );
-				}, function(e) {
-					if (!$rollover.is(':visible')) {
-						$rollover.css( { display: 'block' } );
-					}
-				});
-				
-				$item.parent().mouseleave(function(e) {
-					$rollover.css( { display: 'none' } );
-				});
-			});
+			JCGarcia.Site.imageHolder();
 		});
 	}
 }
