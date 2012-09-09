@@ -452,7 +452,7 @@ span.slogan {
 	position: relative;
 	list-style: none;
 	margin: 0px;
-	padding: 0px 0px 20px 0px;
+	padding: 0px 0px 60px 0px;
 	z-index: 9994;
 }
 #all_posts div.square { }
@@ -532,6 +532,15 @@ span.post_type.portfolio { background: url(img/portfolio_icon.jpg) no-repeat 167
 span.post_type.instagram { background: url(img/instagram_icon.jpg) no-repeat 177px 0px; }
 span.post_type.flickr { background: url(img/flickr_icon.jpg) no-repeat 168px 0px; padding: 1px 35px 0px 0px!important; }
 span.post_type.twitter { background: url(img/tweet_icon.jpg) no-repeat 167px -2px; padding: 1px 35px 0px 0px!important; }
+
+/* Preloader --------------------------------------- */
+#infscr-loading {
+	display: block;
+	position: absolute;
+	width: 956px;
+	bottom: -49px;
+}
+#infscr-loading img { display: block; margin: 0px auto 0px auto; }
 
 
 /* Single Post - Page --------------------------------------- */
