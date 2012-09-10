@@ -10,12 +10,12 @@
 				<div class="profile">
 					<img class="pic_border" src="<?php bloginfo('template_url'); ?>/img/resume_pic.jpg" alt="Profile Pic">
 					<div class="profile_content">
-						<p class="intro">Community Manager y Diseñador Web, apasionado del Diseño, Redes Sociales, el Cine, la Fotografía, la Internet, la Música, la Coreografía y lo Digital. Bloguero empedernido y amante del Estilo Urbano.</p>
+						<p class="intro">Estudié Publicidad en la Universidad Autónoma de Santo Domingo y tengo aproximadamente 5 años de experiencia en el diseño de páginas web. Actualmente busco experiencias en todo lo relacionado al campo web y digital.</p>
 						<p class="knowledge">Poseo conocimientos en Social Media, Blogs, Medios Digitales, UX y amplia experiencia en la públición y administración de contenido en las plataforma Wordpress y Joomla.</p>
-						<h5 class="birth_title">Naci | Born</h5>
-						<p class="birth_date">17 de Marzo 1985 | Mar 17th, 1985</p>
+						<h5 class="birth_title">En la actualidad:</h5>
+						<p class="birth_date">Me encuentro trabajando como diseñador web en <strong>Nobox Marketing Group.</strong></p>
 						<a href="http://linkedin.com/in/jcangustia/es" target="_blank" class="dark_button linkedin">Linkedin</a>
-						<a id="contact_button" href="#" class="dark_button contacto">Contacto</a>
+						<a href="http://www.behance.net/jcagarcia" target="_blank" class="dark_button behance">Behance</a>
 					</div>
 				</div><!-- .profile -->
 				
@@ -185,7 +185,7 @@
 								<p class="quote">"Como revista de la Imagen Digital, Planeta Digital nació promoviendo la Web 2.0 y encontramos en Juan Carlos la persona que motorizó las mejores iniciativas en favor de la Web 2.0 del proyecto, localizando las aplicaciones más novedosas y atractivas para utilizarlas en el Blog, luego en Facebook y más tarde en Twittter, asi como en la búsqueda de contenido de vanguardia para el contenido de la revista."</p>
                                 
                                 
-                                <p class="dates">January 12, 2012.</p>
+                                <p class="dates">October 25, 2010.</p>
 							</div>
 							<div class="job full">
 								<img src="<?php bloginfo('template_url'); ?>/img/joan.jpg" class="pic_border">
