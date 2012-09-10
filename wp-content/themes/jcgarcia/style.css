@@ -534,14 +534,15 @@ span.post_type.instagram { background: url(img/instagram_icon.jpg) no-repeat 177
 span.post_type.flickr { background: url(img/flickr_icon.jpg) no-repeat 168px 0px; padding: 1px 35px 0px 0px!important; }
 span.post_type.twitter { background: url(img/tweet_icon.jpg) no-repeat 167px -2px; padding: 1px 35px 0px 0px!important; }
 
-/* Preloader --------------------------------------- */
+/* Preloaders --------------------------------------- */
 #infscr-loading {
 	display: block;
 	position: absolute;
 	width: 956px;
 	bottom: -49px;
 }
-#infscr-loading img { display: block; margin: 0px auto 0px auto; }
+#infscr-loading img, #homepreload img { display: block; margin: 0px auto 0px auto; }
+#homepreload { padding: 150px 0px 0px 0px; }
 
 
 /* Single Post - Page --------------------------------------- */

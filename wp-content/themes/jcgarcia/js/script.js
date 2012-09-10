@@ -7,6 +7,7 @@ var JCGarcia = {};
 JCGarcia.Site = new function() {
 	var isSearchDisplayed = false;
 	var $lightBox = $j('div.lightbox');
+	var $preloader;
 	
 	this.init = function() {
 		/* Filter Dropdown */
@@ -173,6 +174,18 @@ JCGarcia.Site = new function() {
 		});
 	}
 	
+	this.showPreloader = function() {
+		/* show preloader, do not show it on post pages */
+		var page = $j('body').attr('class');
+		$preloader = $j('<div id="homepreload"><img src="http://www.juancarlosangustia.com/wp-content/uploads/2012/09/inf-loading-588514283.gif"></div>');
+		
+		if (!page.indexOf('single') >= 0) $j('#all_posts').append($preloader);
+	}
+	
+	this.hidePreloader = function() {
+		$preloader.fadeOut('fast');
+	}
+	
 	function resumeRenglons(renglon, itemWidth, thumbWidth, thumbMargin, itemsInView) {
 		var numOflistItems = 0;
 		var $arrowLeft = $j(renglon).find('span.left');
@@ -211,12 +224,15 @@ JCGarcia.Site = new function() {
 	}
 	
 	function masonSquares() {
+		/* hide posts */
 		var $container = $j('#all_posts');
 		$container.find('.square').each(function() {
 			 $j(this).css( { display : 'none', opacity: 0 } );
 		});
 		
+		/* show them when the images are loaded */
 		$container.imagesLoaded(function() {
+			JCGarcia.Site.hidePreloader();
 			$container.masonry( { itemSelector : '.square' } );
 			
 			$container.find('.square').each(function() {
@@ -234,6 +250,7 @@ $j(document).ready(function(e) {
 	//console.log('page: ' + page);
 	
 	JCGarcia.Site.init();
+	JCGarcia.Site.showPreloader();
 	
 	if (page.indexOf('page-template-resume-php') >= 0) {
 		//console.log('resume');
