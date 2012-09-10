@@ -176,10 +176,8 @@ JCGarcia.Site = new function() {
 	
 	this.showPreloader = function() {
 		/* show preloader, do not show it on post pages */
-		var page = $j('body').attr('class');
 		$preloader = $j('<div id="homepreload"><img src="http://www.juancarlosangustia.com/wp-content/uploads/2012/09/inf-loading-588514283.gif"></div>');
-		
-		if (!page.indexOf('single') >= 0) $j('#all_posts').append($preloader);
+		$j('#all_posts').append($preloader);
 	}
 	
 	this.hidePreloader = function() {
