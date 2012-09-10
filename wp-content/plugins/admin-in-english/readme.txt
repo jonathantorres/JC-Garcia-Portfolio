@@ -1,15 +1,15 @@
 === Admin in English ===
 Contributors: nbachiyski
 Tags: translation, translations, admin, i18n, localization, backend
-Requires at least: 2.9
-Tested up to: 2.9
-Stable tag: trunk
+Requires at least: 3.2
+Tested up to: 3.4
+Stable tag: 1.1
 
 Admin in English lets you have your administration panel in English, even if the rest of your blog is translated into another language.
 
 == Description ==
 
-Sometimes we want the front end of our blog to be translated for the users, but keep the backend admin panel in English. Admin in English does just that. 
+Sometimes we want the front end of our blog to be translated for the users, but keep the backend admin panel in English. Admin in English does just that.
 
 == Installation ==
 
@@ -20,6 +20,9 @@ This section describes how to install the plugin and get it working.
 1. Activate the plugin through the `Plugins` menu in WordPress
 
 == Changelog ==
+
+= 1.2 =
+* Don't change the locale of frontend AJAX requests. Props Coen Jacobs.
 
 = 1.1 =
 * Include wp-login.php in the list of URL in English.
