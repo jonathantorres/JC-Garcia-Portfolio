@@ -231,7 +231,7 @@ JCGarcia.Site = new function() {
 		/* show them when the images are loaded */
 		$container.imagesLoaded(function() {
 			JCGarcia.Site.hidePreloader();
-			$container.masonry( { itemSelector : '.square' } );
+			$container.isotope( { itemSelector : '.square', animationEngine : 'jquery' } );
 			
 			$container.find('.square').each(function() {
 				$j(this).css( { display : 'block' } );
