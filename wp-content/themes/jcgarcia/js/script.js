@@ -184,6 +184,42 @@ JCGarcia.Site = new function() {
 		$preloader.fadeOut('fast');
 	}
 	
+	this.filtering = function() {
+		var filters = ['.instagram', '.wp', '.twitter', '.portfolio'];
+		
+		/* Filter instagram */
+		$j('#insta').click(function(e) {
+			isotopeFilter($j(this), '.instagram', filters);
+		});
+		
+		/* Filter Blog */
+		$j('#blogpost').click(function(e) {
+			isotopeFilter($j(this), '.wp', filters);
+		});
+		
+		/* Filter Twitter */
+		$j('#tweets').click(function(e) {
+			isotopeFilter($j(this), '.twitter', filters);
+		});
+		
+		/* Filter Portfolio */
+		$j('#ports').click(function(e) {
+			isotopeFilter($j(this), '.portfolio', filters);
+		});
+	}
+	
+	function isotopeFilter(checkbox, itemClass, array) {
+		if (checkbox.is(':checked')) {
+			if ($j.inArray(itemClass, array) == -1) {
+				array.push(itemClass);
+			}
+		} else {
+			array.splice($j.inArray(itemClass, array), 1);
+		}
+		
+		$j('#all_posts').isotope( { filter: array.join(', ') } );
+	}
+	
 	function resumeRenglons(renglon, itemWidth, thumbWidth, thumbMargin, itemsInView) {
 		var numOflistItems = 0;
 		var $arrowLeft = $j(renglon).find('span.left');
@@ -248,6 +284,7 @@ $j(document).ready(function(e) {
 	//console.log('page: ' + page);
 	
 	JCGarcia.Site.init();
+	JCGarcia.Site.filtering();
 	JCGarcia.Site.showPreloader();
 	
 	if (page.indexOf('page-template-resume-php') >= 0) {
