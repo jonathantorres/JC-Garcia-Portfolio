@@ -482,6 +482,7 @@ span.slogan {
 	background: #FFF;
 }
 #all_posts div.square a { display: block; }
+#all_posts div.square.twitter p a { display: inline; }
 #all_posts div.square.twitter p a, #all_posts div.square.twitter p a:link, #all_posts div.square.twitter p a:visited, #all_posts div.square.twitter p a:active { color: #ed145b; }
 #all_posts div.img_holder {
 	background: url(img/pixels_bg.jpg) repeat;
