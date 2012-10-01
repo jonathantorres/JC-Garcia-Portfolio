@@ -126,11 +126,11 @@ JCGarcia.Site = new function() {
 	}
 	
 	this.home = function() {
-		masonSquares();
+		isotopeSquares();
 	}
 	
 	this.single = function() {
-		masonSquares();
+		isotopeSquares();
 	}
 	
 	this.resume = function() {
@@ -257,7 +257,7 @@ JCGarcia.Site = new function() {
 		});
 	}
 	
-	function masonSquares() {
+	function isotopeSquares() {
 		/* hide posts */
 		var $container = $j('#all_posts');
 		$container.find('.square').each(function() {
