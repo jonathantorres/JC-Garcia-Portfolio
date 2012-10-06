@@ -79,9 +79,7 @@
 		  			</div><!-- .social -->
 		  			
 		  			<div class="search_bar">
-		  				<form id="searchform" action="#" method="get">
-   					 		<input type="text" id="s" name="s" placeholder="Buscar...">
-						</form>
+		  				<?php get_search_form(); ?>
 		  			</div><!-- .search_bar -->
 		  			
 		  			<div class="search_area">
