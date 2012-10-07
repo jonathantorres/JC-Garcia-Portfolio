@@ -580,6 +580,8 @@ div.single {
 }
 .single .post_meta .post_category { margin: 0px 10px 0px 0px; }
 .single .post_meta .post_category span, .single .post_meta .post_comments span { font-family: 'Quicksand Bold'; margin: -1px 5px 0px 0px; }
+.single .post_meta .post_category a:link, .single .post_meta .post_category a:active, .single .post_meta .post_category a:visited { text-decoration: none; }
+.single .post_meta .post_category a:hover { text-decoration: underline; }
 .single .post_meta .post_comments { float: right; }
 div.single img {
 	display: block;

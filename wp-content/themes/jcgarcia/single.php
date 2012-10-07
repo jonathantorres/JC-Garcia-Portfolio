@@ -10,7 +10,10 @@
 	  				<h1 class="post_title"><?php the_title(); ?></h1>
 		  			<div class="post_meta">
 		  				<span class="is_post"><?php the_time('F j, Y'); ?></span>
-		  				<span class="post_category"><span>Categoria:</span> <?php echo $category; ?> </span>
+		  				<span class="post_category">
+		  					<span>Categoria:</span> 
+		  					<a href="<?php echo get_category_link($categories[0]->cat_ID); ?>"><?php echo $category; ?></a>
+		  				</span>
 		  				<span class="post_comments"><span>Comentarios:</span> <?php comments_number('0', '1', '%'); ?></span>
 		  			</div>
 	  				<?php the_content(); ?>
