@@ -7,7 +7,7 @@
   	<div class="contact_form">
 		<a id="close_contact" href="#"></a>
 		<h1>Contacto</h1>
-		<form id="contact_jc" class="comments_form" action="#" method="post">
+		<form id="contact_jc" class="comments_form" enctype="application/x-www-form-urlencoded" action="<?php echo get_bloginfo('template_url') . '/proc_contact.php'; ?>" method="post">
 			<ul>
 				<li>
 					<label for="username">nombre</label>
@@ -50,6 +50,7 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="<?php bloginfo('template_url'); ?>/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
   <script src="<?php bloginfo('template_url'); ?>/js/libs/jquery.isotope.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/libs/jquery.validate.min.js"></script>
 
   <!-- scripts concatenated and minified via build script -->
   <script src="<?php bloginfo('template_url'); ?>/js/plugins.js"></script>

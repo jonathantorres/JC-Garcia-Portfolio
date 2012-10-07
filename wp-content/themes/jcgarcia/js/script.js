@@ -208,6 +208,38 @@ JCGarcia.Site = new function() {
 		});
 	}
 	
+	this.validateContact = function() {
+		$j("#contact_jc").validate( {
+			rules : {
+				username: "required",
+				email: { required : true, email : true },
+				message: "required"
+			},
+			
+			messages : {
+				username: "",
+				email: "",
+				message: ""
+			}
+		});
+	}
+	
+	this.validateComments = function() {
+		$j("#jcomments_form").validate( {
+			rules : {
+				author: "required",
+				email: { required : true, email : true },
+				comment: "required"
+			},
+			
+			messages : {
+				author: "",
+				email: "",
+				comment: ""
+			}
+		});
+	}
+	
 	function isotopeFilter(checkbox, itemClass, array) {
 		if (checkbox.is(':checked')) {
 			if ($j.inArray(itemClass, array) == -1) {
@@ -286,6 +318,8 @@ $j(document).ready(function(e) {
 	JCGarcia.Site.init();
 	JCGarcia.Site.filtering();
 	JCGarcia.Site.showPreloader();
+	JCGarcia.Site.validateContact();
+	JCGarcia.Site.validateComments();
 	
 	if (page.indexOf('page-template-resume-php') >= 0) {
 		//console.log('resume');

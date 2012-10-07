@@ -656,6 +656,10 @@ div.sidebar {
 	background: #484848 url(img/comment_message_icon.png) no-repeat 8px 9px;
 }
 .comments_form ul li input[type="submit"] { float: right; margin: 0px; }
+.comments_form ul li input[type="text"].error, .comments_form ul li textarea.error {
+	background-color: #F00!important; 
+	color: #000!important; 	
+}
 
 /* Resume Page --------------------------------------- */
 .resume {}
@@ -819,6 +823,10 @@ div.sidebar {
 .contact_form #other_contacts h3 { font-size: 1.4em; font-weight: normal; margin: 0px; }
 .contact_form #other_contacts p { font-family: 'Quicksand Light'; font-size: 1.1em; }
 .contact_form #other_contacts .networks { margin: 5px 0px 0px -4px; }
+.contact_form #contact_jc ul li input[type="text"].error, .contact_form #contact_jc ul li textarea.error { 
+	background-color: #F00!important; 
+	color: #000!important; 
+}
 
 
 

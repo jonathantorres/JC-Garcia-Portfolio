@@ -39,7 +39,7 @@
 	
 	<?php if (comments_open()) : ?>
 		<h3 class="reply_title">AÑADIR COMENTARIO</h3>
-		<form class="comments_form" action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post">
+		<form id="jcomments_form" class="comments_form" action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post">
 			<ul>
 				<!-- If The Admin or a user is logged in -->
 				<?php if ($user_ID) : ?>
