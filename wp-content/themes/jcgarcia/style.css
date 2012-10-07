@@ -757,7 +757,7 @@ div.sidebar {
 /* Contact Lightbox ------------------------------------------- */
 .contact_container {
 	display: none;
-	position: absolute;
+	position: fixed;
 	width: 620px;
 	height: 420px;
 	border-radius: 10px;
@@ -773,7 +773,7 @@ div.sidebar {
 }
 .contact_form {
 	display: none;
-	position: absolute;
+	position: fixed;
 	width: 560px;
 	height: 360px;
 	top: 50%;
