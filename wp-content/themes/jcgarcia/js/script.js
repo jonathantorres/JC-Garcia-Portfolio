@@ -87,15 +87,29 @@ JCGarcia.Site = new function() {
 			});
 		}
 		
-		/* Show drop shadow when scrolling */
+		/* Show drop shadow when scrolling, scroll to top */
 		$j(window).scroll(function(e) {
 			var scrollTop = $j(window).scrollTop();
 			
+			/* drop shadow */
 			if (scrollTop < 10) {
 				$j('#page_header').removeClass();
 			} else {
 				$j('#page_header').addClass('dropshadow');
 			}
+			
+			/* scroll to top */
+			if (scrollTop > 100) {
+				$j('#back_to_top').fadeIn();
+			} else {
+				$j('#back_to_top').fadeOut();
+			}
+		});
+		
+		/* click on back to top button */
+		$j('#back_to_top').click(function(e) {
+			e.preventDefault();
+			$j('body, html').animate( { scrollTop: 0 }, 1000);
 		});
 		
 		/* Open contact lightbox */

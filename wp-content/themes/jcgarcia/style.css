@@ -738,6 +738,18 @@ div.sidebar {
 .resume .renglon .jobs .job p.quote { font-size: 1em; font-weight: lighter; margin: 0px 0px 5px 0px; }
 .resume .renglon .jobs .job p.dates { color: #818181; font-size: 0.8em; margin: 0px; }
 
+/* Back to top ------------------------------------------- */
+#back_to_top {
+	display: none;
+	position: fixed;
+	width: 70px;
+	height: 70px;
+	top: 80%;
+	left: 90%;
+	text-indent: -999999px;
+	background: transparent url(img/up_btn.png) no-repeat;
+}
+
 /* Lightbox ------------------------------------------- */
 .lightbox {
 	position: fixed;
