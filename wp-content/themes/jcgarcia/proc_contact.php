@@ -25,6 +25,7 @@ $mail = new PHPMailer();
 $mail->From = $email;
 $mail->FromName = $username;
 $mail->AddAddress('jonathantorres41@gmail.com', 'Jonathan Torres');
+$mail->AddAddress('jc.angustia@gmail.com', 'Juan Carlos Garcia');
 $mail->AddReplyTo($email, $username);
 			
 $mail->IsHTML(true);

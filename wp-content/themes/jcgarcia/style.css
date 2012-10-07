@@ -659,7 +659,7 @@ div.sidebar {
 }
 .comments_form ul li input[type="submit"] { float: right; margin: 0px; }
 .comments_form ul li input[type="text"].error, .comments_form ul li textarea.error {
-	background-color: #F00!important; 
+	background-color: #feacac!important; 
 	color: #000!important; 	
 }
 
@@ -826,7 +826,7 @@ div.sidebar {
 .contact_form #other_contacts p { font-family: 'Quicksand Light'; font-size: 1.1em; }
 .contact_form #other_contacts .networks { margin: 5px 0px 0px -4px; }
 .contact_form #contact_jc ul li input[type="text"].error, .contact_form #contact_jc ul li textarea.error { 
-	background-color: #F00!important; 
+	background-color: #feacac!important; 
 	color: #000!important; 
 }
 
