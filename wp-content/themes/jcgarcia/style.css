@@ -587,6 +587,7 @@ div.single img {
 	display: block;
 	margin: 10px 0px 10px 0px;
 }
+.single .gallery img { margin: 0px!important; }
 .single .social_sharing { 
 	display: block;
 	margin: 15px 0px 15px 0px;
