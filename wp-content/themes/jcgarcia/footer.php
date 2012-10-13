@@ -38,7 +38,7 @@
 			<div class="networks">
 				<a href="https://twitter.com/memoplus" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/contact_twitter_icon.png"></a>
 				<a href="http://www.flickr.com/photos/flowy" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/contact_flickr_icon.png"></a>
-				<a href="#"><img src="<?php bloginfo('template_url'); ?>/img/contact_instagram_icon.png"></a>
+				<a href="http://www.pinterest.com/jcagarcia/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/contact_pinterest_icon.png"></a>
 				<a href="http://www.linkedin.com/in/jcangustia/es" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/contact_linkedin_icon.png"></a>
 			</div>
 		</div><!-- #other_contacts -->
