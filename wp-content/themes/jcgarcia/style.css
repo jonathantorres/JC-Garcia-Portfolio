@@ -744,11 +744,12 @@ div.sidebar {
 	position: fixed;
 	width: 70px;
 	height: 70px;
-	top: 80%;
-	left: 90%;
+	padding: 0px;
+	margin: 420px 0px 0px 980px;
 	text-indent: -999999px;
 	background: transparent url(img/up_btn.png) no-repeat;
 }
+#back_to_top:hover { background: transparent url(img/up_btn_hover.png) no-repeat; }
 
 /* Lightbox ------------------------------------------- */
 .lightbox {

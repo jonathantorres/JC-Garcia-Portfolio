@@ -1,6 +1,7 @@
 	  		<?php get_header(); ?>
 	  		
 	  		<div id="all_posts">
+	  			<a href="#top" id="back_to_top">Subir</a>
 		  		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		  			<?php get_template_part('loop'); ?>
 		  		<?php endwhile; else: ?>
