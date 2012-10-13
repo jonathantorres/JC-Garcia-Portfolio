@@ -7,6 +7,7 @@
 			<?php get_header(); ?>
 			
 			<div class="resume">
+				<a href="#top" id="back_to_top">Subir</a>
 				<div class="profile">
 					<img class="pic_border" src="<?php bloginfo('template_url'); ?>/img/resume_pic.jpg" alt="Profile Pic">
 					<div class="profile_content">
@@ -33,7 +34,7 @@
 								<h2>Web Designer</h2>
 								<h3>Nobox Marketing Group</h3>
 								<p class="role">Diseñador web, creador de interfaces para aplicaciones de Facebook, UX, y digital design.</p>
-								<p class="dates">marzo de 2011 – Presente (1 año)</p>
+								<p class="dates">marzo de 2011 – Presente </p>
 							</div>
 							<div class="job">
 								<h2>Internet Operator</h2>
@@ -49,21 +50,9 @@
 							</div>
 							<div class="job">
 								<h2>Web Designer</h2>
-								<h3>Nobox Marketing Group</h3>
-								<p class="role">Diseñador web, creador de interfaces para aplicaciones de Facebook, UX, y digital design.</p>
-								<p class="dates">marzo de 2011 – Presente (1 año)</p>
-							</div>
-							<div class="job">
-								<h2>Internet Operator</h2>
-								<h3>Listin Diario</h3>
-								<p class="role">Parte del equipo técnico de la edición digital del periódico Listín Diario. (www.listindiario.com)</p>
-								<p class="dates">nov. de 2006 – feb. de 2010 (3 años 4 meses)</p>
-							</div>
-							<div class="job">
-								<h2>Community Manager</h2>
-								<h3>Revista Planeta Digital</h3>
-								<p class="role">Parte del equipo técnico de la edición digital del periódico Listín Diario. (www.listindiario.com)</p>
-								<p class="dates">marzo de 2011 – Presente (1 año)</p>
+								<h3><strong>Intermade</strong> <strong>Web</strong> <strong>Creations</strong></h3>
+							  <p class="role">Diseñador web, encargado del desarrollo de proyectos web para empresas dominicanas.</p>
+								<p class="dates">julio de 2006 – septiembre de 2006 (3 meses)</p>
 							</div>
 						</div><!-- .jobs -->
 					</div><!-- .jobs_container -->
@@ -80,8 +69,23 @@
 					<div class="jobs_container">
 						<div class="jobs">
 							<div class="job">
+								<h2>Guía Constanza</h2>
+								<h3>UX, Web Design &amp; Mobile version</h3>
+								<p class="role">Desarrollo del proyecto ecoturístico Guiaconstanza.com.</p>
+							</div>
+							<div class="job">
+								<h2>Gane en Bonche con Coca Cola</h2>
+								<h3>UX &amp; Web Design</h3>
+								<p class="role">Desarrollo creativo del landing page de la campaña Gana en Bonche con Coca Cola.</p>
+							</div>
+							<div class="job">
+								<h2>Guerrerodeluz.org</h2>
+								<h3>UX, Wireframes & Backend</h3>
+								<p class="role">Trabajo realizado en la agencia Nobox Dev.</p>
+							</div>
+							<div class="job">
 								<h2>Olga Tañon Official Web Site</h2>
-								<h3>UX, Web Design</h3>
+								<h3>UX &amp;Web Design</h3>
 								<p class="role">Client: FullSwitch</p>
 							</div>
 							<div class="job">
@@ -90,24 +94,9 @@
 								<p class="role">Parte del team creativo en Kolapse Interactive</p>
 							</div>
 							<div class="job">
-								<h2>Guerrerodeluz.org</h2>
-								<h3>UX, Wireframes & Backend</h3>
-								<p class="role">Trabajo realizado en la agencia Nobox Dev.</p>
-							</div>
-							<div class="job">
-								<h2>Olga Tañon Official Web Site</h2>
-								<h3>UX, Web Design</h3>
-								<p class="role">Client: FullSwitch</p>
-							</div>
-							<div class="job">
-								<h2>Buenavibrapr.com</h2>
-								<h3>UX, Web Design</h3>
-								<p class="role">Parte del team creativo en Kolapse Interactive</p>
-							</div>
-							<div class="job">
-								<h2>Guerrerodeluz.org</h2>
-								<h3>UX, Wireframes & Backend</h3>
-								<p class="role">Trabajo realizado en la agencia Nobox Dev.</p>
+								<h2>Copa Airlines es posible</h2>
+							  <h3>Email, Landing Page &amp; Banners</h3>
+								<p class="role">En la agencia Nobox estoy encargado del desarrollo día a día de diseños para Copa Airline. </p>
 							</div>
 						</div><!-- .jobs -->
 					</div><!-- .jobs_container -->
@@ -124,7 +113,7 @@
 					<div class="jobs_container">
 						<div class="jobs">
 							<div class="job">
-								<h2>Universidad Metropolitana (UMET)</h2>
+								<h2>Universidad Metropolitana de Cupey (UMET)</h2>
 								<h3>Relaciones Públicas</h3>
 								<p class="role">Cursando actualmente.</p>
 							</div>
@@ -134,24 +123,9 @@
 								<p class="role">2005 - 2009</p>
 							</div>
 							<div class="job">
-								<h2>Universidad Metropolitana (UMET)</h2>
-								<h3>Relaciones Públicas</h3>
-								<p class="role">Cursando actualmente.</p>
-							</div>
-							<div class="job">
-								<h2>Universidad Autónoma de Santo Domingo (UASD)</h2>
-								<h3>Advertaising / Graphic Design</h3>
-								<p class="role">2005 - 2009</p>
-							</div>
-							<div class="job">
-								<h2>Universidad Metropolitana (UMET)</h2>
-								<h3>Relaciones Públicas</h3>
-								<p class="role">Cursando actualmente.</p>
-							</div>
-							<div class="job">
-								<h2>Universidad Autónoma de Santo Domingo (UASD)</h2>
-								<h3>Advertaising / Graphic Design</h3>
-								<p class="role">2005 - 2009</p>
+								<h2>Pontificia Universidad Católica Madre y Maestra (PCMM)</h2>
+								<h3>Taller: Internet y el periodismo.</h3>
+								<p class="role">Taller de 4 días, impartido en el 2010.</p>
 							</div>
 						</div><!-- .jobs -->
 					</div><!-- .jobs_container -->
