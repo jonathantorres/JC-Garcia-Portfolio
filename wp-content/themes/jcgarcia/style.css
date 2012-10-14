@@ -484,6 +484,13 @@ span.slogan {
 #all_posts div.square a { display: block; }
 #all_posts div.square.twitter p a { display: inline; }
 #all_posts div.square.twitter p a, #all_posts div.square.twitter p a:link, #all_posts div.square.twitter p a:visited, #all_posts div.square.twitter p a:active { color: #ed145b; }
+#all_posts div.square.twitter span.tweet_time {
+	display: block;
+	float: left;
+	font-size: 0.7em;
+	width: 100px;
+	padding: 15px 0px 0px 0px;
+}
 #all_posts div.img_holder {
 	background: url(img/pixels_bg.jpg) repeat;
 }
@@ -533,7 +540,12 @@ span.post_type.wp { background: url(img/post_icon.png) no-repeat 182px 0px;  }
 span.post_type.portfolio { background: url(img/portfolio_icon.png) no-repeat 177px -2px; padding: 1px 26px 0px 0px!important; }
 span.post_type.instagram { background: url(img/instagram_icon.png) no-repeat 184px 0px; padding: 3px 19px 0px 0px!important; }
 span.post_type.flickr { background: url(img/flickr_icon.png) no-repeat 178px 0px; padding: 1px 26px 0px 0px!important; }
-span.post_type.twitter { background: url(img/tweet_icon.png) no-repeat 182px -2px; padding: 1px 24px 0px 0px!important; }
+span.post_type.twitter {
+	width: 50px;
+	float: right;
+	padding: 15px 24px 0px 0px!important;
+	background: url(img/tweet_icon.png) no-repeat 54px 12px; 
+}
 
 /* Preloaders --------------------------------------- */
 #infscr-loading {
