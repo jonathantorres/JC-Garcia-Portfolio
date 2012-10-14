@@ -2,9 +2,9 @@
 
 require_once('inc/class.phpmailer.php');
 
-$username = htmlentities($_POST['username']);
-$email = htmlentities($_POST['email']);
-$message = htmlentities($_POST['message']);
+$username = htmlentities($_POST['un']);
+$email = htmlentities($_POST['ue']);
+$message = htmlentities($_POST['um']);
 
 //html body
 $body = "<h3>Mensaje de: " . $username . "</h3>";
@@ -33,7 +33,5 @@ $mail->Subject = 'Mensaje de: ' . $username;
 $mail->MsgHTML($body);
 $mail->AltBody = $alt;
 $mail->Send();
-
-header('Location: http://www.juancarlosangustia.com');
 
 ?>

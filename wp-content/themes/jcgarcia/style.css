@@ -843,6 +843,14 @@ div.sidebar {
 	background-color: #feacac!important; 
 	color: #000!important; 
 }
+.contact_form #form_confirmation { display: none; }
+.contact_form #form_confirmation p {
+	width: 450px;
+	margin: 137px auto 0px auto;
+	font-family: 'Exo Bold';
+	font-size: 2em;
+	text-align: center;
+}
 
 
 

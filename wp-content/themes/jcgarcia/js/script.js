@@ -6,6 +6,7 @@ var JCGarcia = {};
 
 JCGarcia.Site = new function() {
 	var isSearchDisplayed = false;
+	var isFormSubmitted = false;
 	var $lightBox = $j('div.lightbox');
 	var $preloader;
 	
@@ -134,7 +135,16 @@ JCGarcia.Site = new function() {
 			
 			$contactContainer.fadeOut('fast');
 			$contactForm.fadeOut('fast', function() {
-				$lightBox.fadeOut('fast');
+				$lightBox.fadeOut('fast', function() {
+					
+					/* if user submitted form, hide confirmation message and show the form again */
+					if (isFormSubmitted) {
+						$j('#form_wrapper').css( { 'display' : 'block' } );
+						$j('#form_confirmation').css( { 'display' : 'none' } );
+						
+						isFormSubmitted = false;
+					}
+				});
 			});
 		});
 	}
@@ -234,6 +244,29 @@ JCGarcia.Site = new function() {
 				username: "",
 				email: "",
 				message: ""
+			},
+			
+			submitHandler : function(form) {
+				var username = $j('#username').val();
+				var useremail = $j('#email').val();
+				var usermessage = $j('#message').val();
+				
+				$j.ajax( {
+					type : 'POST',
+					url : 'http://www.juancarlosangustia.com/wp-content/themes/jcgarcia/proc_contact.php',
+					data : { un : username, ue : useremail, um : usermessage }, 
+					success : function() {					
+						$j('#form_wrapper').fadeOut(1000, function() {
+							$j('#username').val('');
+							$j('#email').val('');
+							$j('#message').val('');
+							
+							$j('#form_confirmation').fadeIn();
+						});
+						
+						isFormSubmitted = true;
+					}
+				});
 			}
 		});
 	}
