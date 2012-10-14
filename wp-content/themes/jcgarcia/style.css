@@ -490,12 +490,12 @@ span.slogan {
 #all_posts span.post_type {
 	display: block;
 	text-align: right;
-	font-size: 0.8em;
-	height: 22px;
+	font-size: 0.7em;
+	height: 20px;
 	color: #A7A7A7;
 	font-family: 'Times';
 	font-style: italic;
-	padding: 3px 29px 0px 0px;
+	padding: 3px 24px 0px 0px;
 }
 #all_posts .rollover {
 	display: none;
@@ -529,11 +529,11 @@ span.slogan {
 #all_posts .rollover .over_img.flickr { background: url(img/flickr_over_icon.png) no-repeat; width: 80px; }
 #all_posts .rollover .over_img.portfolio { background: url(img/portfolio_over_icon.png) no-repeat; width: 80px; height: 80px; }
 
-span.post_type.wp { background: url(img/post_icon.jpg) no-repeat 177px 0px;  }
-span.post_type.portfolio { background: url(img/portfolio_icon.jpg) no-repeat 167px -2px; padding: 1px 38px 0px 0px!important; }
-span.post_type.instagram { background: url(img/instagram_icon.jpg) no-repeat 177px 0px; }
-span.post_type.flickr { background: url(img/flickr_icon.jpg) no-repeat 168px 0px; padding: 1px 35px 0px 0px!important; }
-span.post_type.twitter { background: url(img/tweet_icon.jpg) no-repeat 167px -2px; padding: 1px 35px 0px 0px!important; }
+span.post_type.wp { background: url(img/post_icon.png) no-repeat 182px 0px;  }
+span.post_type.portfolio { background: url(img/portfolio_icon.png) no-repeat 177px -2px; padding: 1px 26px 0px 0px!important; }
+span.post_type.instagram { background: url(img/instagram_icon.png) no-repeat 184px 0px; padding: 3px 19px 0px 0px!important; }
+span.post_type.flickr { background: url(img/flickr_icon.png) no-repeat 178px 0px; padding: 1px 26px 0px 0px!important; }
+span.post_type.twitter { background: url(img/tweet_icon.png) no-repeat 182px -2px; padding: 1px 24px 0px 0px!important; }
 
 /* Preloaders --------------------------------------- */
 #infscr-loading {
