@@ -24,7 +24,9 @@
 		<ol class="comments_list">
 			<?php foreach ($comments as $comment) : ?>
 				<li <?php comment_class(); ?>>
-					<?php echo get_avatar($comment->comment_author_email, 48); ?>
+					<div class="pic_circle48 avatar">
+						<?php echo get_avatar($comment->comment_author_email, 48); ?>
+					</div>
 					<div class="comment_content">
 						<div class="comment_meta">
 							<h4 class="commenter_name"><?php comment_author(); ?></h4>

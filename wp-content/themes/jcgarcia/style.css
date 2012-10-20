@@ -302,6 +302,27 @@ p { font-size: 0.9em; margin: 0px 0px 15px 0px; }
 	-moz-box-shadow: 0 0 5px #999;
 	box-shadow: 0 0 5px #999;
 }
+.pic_circle48 {
+	overflow: hidden;
+	width: 48px;
+	height: 48px;
+	-webkit-border-radius: 24px;
+	border-radius: 24px;
+}
+.pic_circle86 {
+	overflow: hidden;
+	width: 86px;
+	height: 86px;
+	-webkit-border-radius: 43px;
+	border-radius: 43px;
+}
+.pic_circle63 {
+	overflow: hidden;
+	width: 63px;
+	height: 63px;
+	-webkit-border-radius: 31px;
+	border-radius: 31px;
+}
 
 /* Containers --------------------------------------- */
 #mainContainer { width: 990px; margin: 0px auto 50px auto; overflow: hidden; }
@@ -624,12 +645,13 @@ div.sidebar {
 .comments .comments_list li { overflow: hidden; border-bottom: dotted 1px #CCC; margin: 0px 0px 20px 0px; }
 .comments .comments_list li:last-child { border: none; }
 .comments .comments_list li div.comment_content { display: block; float: right; width: 360px; }
-.comments .comments_list li img.avatar { 
+.comments .comments_list li div.avatar { 
 	display: block; 
 	float: left; 
 	margin: 0px 10px 0px 0px; 
 	padding: 0px;
 }
+.comments .comments_list li div.avatar img { margin: 0px; }
 .comments .comments_list div.comment_meta { display: block; overflow: hidden; }
 .comments .comments_list li h4.commenter_name { 
 	width: 200px; 
@@ -685,16 +707,16 @@ div.sidebar {
 	margin: 0px 0px 0px -25px;
 	background: url(img/paper_bg.png) no-repeat 0px 0px;
 }
-.resume .profile img { margin: 62px 20px 0px 48px; float: left; }
+.resume .profile .profile_img { margin: 62px 20px 0px 48px; float: left; }
 .resume .profile .profile_content { width: 796px; padding: 62px 0px 0px 144px; }
 .resume .profile .profile_content p { color: #766958; font-size: 0.8em; line-height: 20px; }
 .resume .profile .profile_content p.intro { margin: -4px 0px 15px 0px; }
 .resume .profile .profile_content p.knowledge { padding: 8px 0px 0px 0px; }
-.resume .profile .profile_content p.birth_date { margin: -7px 0px 0px 20px; color: #ae9e8a; }
+.resume .profile .profile_content p.birth_date { margin: -7px 0px 0px 10px; color: #ae9e8a; }
 .resume .profile .profile_content h5 { 
 	color: #766958; 
 	font-family: sans-serif;
-	padding: 8px 0px 0px 20px; 
+	padding: 8px 0px 0px 10px; 
 }
 .resume .profile .profile_content a { float: right; display: block; margin: -39px 10px 10px 0px; }
 .resume .profile .profile_content a.linkedin { margin: -39px 0px 10px 0px; }
@@ -743,7 +765,8 @@ div.sidebar {
 .resume .renglon .jobs .job.medium { width: 400px; }
 .resume .renglon .jobs .job.large { width: 500px; }
 .resume .renglon .jobs .job.full { width: 936px; }
-.resume .renglon.recomendation .jobs .job.full img { float: left; margin: 0px 15px 50px 0px; }
+.resume .renglon.recomendation .jobs .job.full div.reco_img { float: left; margin: 0px 15px 60px 0px; }
+.resume .renglon.recomendation .jobs .job.full div.reco_img img { width: 63px; height: 63px; }
 .resume .renglon .jobs .job.third { margin: 0px; }
 .resume .renglon .jobs .job h2, .resume .renglon .jobs .job h3 { font-size: 1.1em; font-weight: normal; margin: 0px; }
 .resume .renglon .jobs .job h3, .resume .renglon.recomendation .jobs .job h2 span { font-family: 'Quicksand Light'; }
