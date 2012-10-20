@@ -104,11 +104,11 @@
 			  			<div class="filter default">
 		  					<span>Filtrar Contenido</span>
 		  					<ul class="filter_dropdown">
-		  						<li><input id="insta" type="checkbox" checked="checked">Instagram</li>
-		  						<!-- <li><input type="checkbox" checked="checked">Flickr</li> -->
-		  						<li><input id="blogpost" type="checkbox" checked="checked">Blog</li>
-		  						<li><input id="tweets" type="checkbox" checked="checked">Twitter</li>
-		  						<li><input id="ports" type="checkbox" checked="checked">Portafolio</li>
+		  						<li><input id="insta" type="checkbox" checked="checked"><label for="insta">Instagram</label></li>
+		  						<!-- <li><input id="flickrpost" type="checkbox" checked="checked"><label for="flickrpost">Flickr</label></li> -->
+		  						<li><input id="blogpost" type="checkbox" checked="checked"><label for="blogpost">Blog</label></li>
+		  						<li><input id="tweets" type="checkbox" checked="checked"><label for="tweets">Twitter</label></li>
+		  						<li><input id="ports" type="checkbox" checked="checked"><label for="ports">Portafolio</label></li>
 		  					</ul>
 		  				</div><!-- .filter -->
 		  			<?php else : ?>
