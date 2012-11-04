@@ -416,6 +416,7 @@ span.slogan {
 #main_nav.right { float: right; }
 #main_nav ul { margin-top: 15px; }
 #main_nav ul li { float: left; padding: 0px 25px 0px 0px; }
+#main_nav ul li.last_menu_item { padding: 0px 10px 0px 0px; }
 #main_nav ul li a, #main_nav ul li a:active, #main_nav ul li a:visited, #main_nav ul li a:link {
 	text-decoration: none;
 	color: #000;

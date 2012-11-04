@@ -116,7 +116,7 @@
 			  				<ul class="nav_list">
 			  					<li><a id="resume_btn" href="<?php echo get_page_link(13); ?>">RESUME</a></li>
 			  					<li><a href="<?php echo get_category_link(3); ?>">PORTFOLIO</a></li>
-			  					<li><a id="contact_btn" href="#">CONTACTO</a></li>
+			  					<li class="last_menu_item"><a id="contact_btn" href="#">CONTACTO</a></li>
 			  				</ul>
 			  			</nav><!-- #main_nav -->
 		  			<?php endif; ?>
