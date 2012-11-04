@@ -308,14 +308,17 @@ JCGarcia.Site = new function() {
 		numOflistItems = $j(renglon + ' .jobs .job').length;
 		$jobsContainer.css( { 'left' : '0px' } );
 		$jobsContainer.css( { 'width' : (numOflistItems * thumbWidth) + (numOflistItems * thumbMargin) + 'px' } );
-		//console.log(numOflistItems);
 		
 		$arrowLeft.click(function(e) { 
 			e.preventDefault();
 			if ($j('$jobsContainer:animated').length) return;
 			
+			var itemsOutside = numOflistItems - itemsInView;
+			var limitLeft = itemWidth * itemsOutside;
+			
 			if (parseInt($jobsContainer.css('left')) >= 0) {
-				$jobsContainer.css( { 'left': '0px' } )
+				//$jobsContainer.css( { 'left': '0px' } );
+				$jobsContainer.animate( { left: -limitLeft + 'px' } );
 			} else {
 				$jobsContainer.animate( { left: (parseInt($jobsContainer.css('left')) + itemWidth) + 'px' } );
 			}
@@ -329,7 +332,8 @@ JCGarcia.Site = new function() {
 			var limitLeft = itemWidth * itemsOutside;
 			
 			if (parseInt($jobsContainer.css('left')) == -limitLeft) {
-				$jobsContainer.css( { 'left': -limitLeft + 'px' } );
+				//$jobsContainer.css( { 'left': -limitLeft + 'px' } );
+				$jobsContainer.animate( { left: '0px' } );
 			} else {
 				$jobsContainer.animate( { left: (parseInt($jobsContainer.css('left')) - itemWidth) + 'px' } );
 			}
@@ -360,7 +364,6 @@ JCGarcia.Site = new function() {
 
 $j(document).ready(function(e) {
 	var page = $j('body').attr('class');
-	//console.log('page: ' + page);
 	
 	JCGarcia.Site.init();
 	JCGarcia.Site.filtering();
@@ -369,11 +372,9 @@ $j(document).ready(function(e) {
 	JCGarcia.Site.validateComments();
 	
 	if (page.indexOf('page-template-resume-php') >= 0) {
-		//console.log('resume');
 		JCGarcia.Site.resume();
 	} else {
 		JCGarcia.Site.home();
-		//console.log('home or other page');
 	}
 });
 
